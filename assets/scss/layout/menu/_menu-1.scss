@@ -1,0 +1,53 @@
+@use '../../utils/' as * ;
+
+/*============= FEATURES CSS AREA STARTS ===============*/
+.features15-section-area {
+    background: #F9FAFB;
+    position: relative;
+    z-index: 1;
+    .features15-boxarea {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: all .4s;
+        border-radius: 8px;
+        background: var(--white, #FFF);
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px -1px rgba(0, 0, 0, 0.10);        
+        padding: 30px;
+        margin-bottom: 30px;
+        .img1 {
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+                border-radius: 8px;
+                background: var(--white, #FFF);
+                box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px -1px rgba(0, 0, 0, 0.10);                    
+            }
+        }
+        a {
+            color: var(--Text-Color, #090B0E);
+            font-family: var(--ztc-family-font1);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 125%;
+            transition: all .4s;
+            display: inline-block;
+            &:hover {
+                color: #1A56DB;
+                transition: all .4s;
+            }
+        }
+        p {
+            color: var(--gray-500, var(--gray-500, #6B7280));
+            font-family: var(--ztc-family-font1);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;      
+        }
+    }
+}
+/*============= FEATURES CSS AREA ENDS ===============*/
