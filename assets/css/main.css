@@ -10,6 +10,12 @@ ul {
 ul li {
   list-style: none;
 }
+.site{
+  display: flex;
+      margin-bottom: 13px;
+      margin-right: 8em;
+}
+
 
 h2, p {
   margin-bottom: 0;
@@ -25447,6 +25453,7 @@ Location:
 .contact-main-inner-area .contact-header .number-address-area2 .phone-number {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 @media (max-width: 767px) {
   .contact-main-inner-area .contact-header .number-address-area2 .phone-number {
