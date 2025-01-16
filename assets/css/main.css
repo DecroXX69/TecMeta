@@ -4237,6 +4237,17 @@ Location:
     display: inline-block;
   }
 }
+.service1-section-area .service-all-boxes-area1 .service-boxarea19 {
+  text-align: center;
+  /* background: #DDD2F3; */
+  background: lightsteelblue;
+  position: relative;
+  padding: 50px 20px;
+  border-radius: 8px;
+  max-height: 440px;
+  margin-bottom: 30px;
+}
+
 .service1-section-area .service-all-boxes-area .service-boxarea {
   text-align: center;
   background: var(--ztc-bg-bg-5);
