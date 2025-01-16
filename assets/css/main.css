@@ -4237,17 +4237,6 @@ Location:
     display: inline-block;
   }
 }
-.service1-section-area .service-all-boxes-area1 .service-boxarea19 {
-  text-align: center;
-  /* background: #DDD2F3; */
-  background: lightsteelblue;
-  position: relative;
-  padding: 50px 20px;
-  border-radius: 8px;
-  max-height: 440px;
-  margin-bottom: 30px;
-}
-
 .service1-section-area .service-all-boxes-area .service-boxarea {
   text-align: center;
   background: var(--ztc-bg-bg-5);
@@ -4306,7 +4295,18 @@ Location:
 }
 .service1-section-area .service-all-boxes-area1 .service-boxarea {
   text-align: center;
-  background: #DDD2F3;
+  background: #DDD2F3; 
+  /* background: lightsteelblue; */
+  position: relative;
+  padding: 50px 20px;
+  border-radius: 8px;
+  max-height: 440px;
+  margin-bottom: 30px;
+}
+.service1-section-area .service-all-boxes-area1 .service-boxarea19 {
+  text-align: center;
+  /* background: #DDD2F3; */
+  background: lightsteelblue;
   position: relative;
   padding: 50px 20px;
   border-radius: 8px;
@@ -21936,9 +21936,9 @@ Location:
   font-weight: var(--ztc-weight-medium);
   padding: 30px 24px;
 }
-.compare-table-area .comparison tbody tr:nth-child(odd) {
+/* .compare-table-area .comparison tbody tr:nth-child(odd) {
   display: none;
-}
+} */
 .compare-table-area .comparison .compare-row {
   background: var(--ztc-text-text-1);
 }
@@ -21973,7 +21973,7 @@ Location:
 .compare-table-area .comparison tr td:first-child {
   text-align: left;
   border-right: 1px solid #B2BBC6;
-  border-bottom: 1px solid #F0F1F4;
+  /* border-bottom: 1px solid #F0F1F4; */
 }
 .compare-table-area .comparison .product,
 .compare-table-area .comparison .tl {
