@@ -646,88 +646,210 @@
 <!--===== HERO AREA ENDS =======-->
 
 <!--===== CONTACT AREA STARTS =======-->
-<div class="contact-main-inner-area sp1">
+<div class="contact-main-inner-area py-5">
   <div class="container">
-      <div class="row align-items-center">
-          <div class="col-lg-6">
-              <div class="heading2 contact-header">
-                 <h5>Contact Us</h5>
-                 <h2>Get in Touch – We Value Your Connection</h2>
-                 <p>Our dedicated team is committed to providing prompt and effective support to ensure your needs are met. We believe in open communication and are always ready to listen. Reach out to us via phone, email, or live chat, or visit our office during business hours.</p>
-                 <!-- Contact Information -->
-                 <div class="space32"></div>
-                 <div class="number-address-area">
-                     <div class="phone-number">
-                         <div class="img1">
-                             <img src="assets/img/icons/phone3.svg" alt="">
-                         </div>
-                         <div class="content">
-                             <p>Phone Number</p>
-                             <a href="tel:+91 9156764099">+91 9156764099</a>
-                         </div>
-                     </div>
-                     
-                 </div>
-             </div>
-          </div>
-          <div class="col-lg-1"></div>
-          <div class="col-lg-5">
-              <div class="contact-form-area">
-                  <h4>Get In Touch</h4>
-                  <div class="row">
-                      <div class="col-lg-12">
-                          <div class="input-area">
-                              <input type="text" id="firstName" placeholder="First Name">
-                          </div>
-                      </div>
-
-                      <div class="col-lg-12">
-                          <div class="input-area">
-                              <input type="text" id="lastName" placeholder="Last Name">
-                          </div>
-                      </div>
-
-                      <div class="col-lg-12">
-                          <div class="input-area">
-                              <input type="email" id="email" placeholder="Email Address">
-                          </div>
-                      </div>
-                      <div class="col-lg-12">
-                          <div class="input-area">
-                              <input type="number" id="phoneNumber" placeholder="Phone Number">
-                          </div>
-                      </div>
-                      <div class="col-lg-12">
-                        <div class="input-area">
-                          <select name="service" id="service" class="country-area nice-select6 haha" >
-                            <option value="" data-display="Service Type">Service Type</option>
-                            <option value="Pay Per Click">Pay Per Click</option>
-                            <option value="SEO">SEO</option>
-                            <option value="Social Media Marketing">Social Media Marketing</option>
-                            <option value="Web Design and Development">Web Design and Development</option>
-                            <option value="Email Marketing">Email Marketing</option>
-                            <option value="Branding and Promotion">Branding and Promotion</option>
-                            <option value="Mobile App Development">Mobile App Development</option>
-                            <option value="Graphic Designing">Graphic Designing</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-lg-12">
-                          <div class="input-area">
-                            <textarea id="message" placeholder="Your Message"></textarea>
-                          </div>
-                      </div>
-                      <div class="col-lg-12">
-                          <div class="input-area">
-                           <button type="button" class="header-btn1" onclick="submitContactForm()">Get In Touch <span><i class="fa-solid fa-arrow-right"></i></span></button>
-                          </div>
-                      </div>
-                  </div>
+    <div class="row align-items-start g-4">
+      <!-- Left Column - Contact Information -->
+      <div class="col-lg-6">
+        <div class="contact-content pe-lg-4">
+          <span class="subtitle text-primary fw-medium mb-2 d-block">Contact Us</span>
+          <h2 class="title mb-4">Get in Touch – We Value Your Connection</h2>
+          <p class="description text-muted mb-5">Our dedicated team is committed to providing prompt and effective support to ensure your needs are met. We believe in open communication and are always ready to listen. Reach out to us via phone, email, or live chat, or visit our office during business hours.</p>
+          
+          <div class="contact-details">
+            <!-- Phone -->
+            <div class="contact-item d-flex align-items-center mb-4">
+              <div class="icon-wrapper me-4">
+                <img src="assets/img/icons/phone3.svg" alt="Phone Icon" width="28">
               </div>
+              <div class="content">
+                <p class="label text-muted mb-1">Phone Number</p>
+                <a href="tel:+91 9156764099" class="contact-link">+91 9156764099</a>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-item d-flex align-items-center mb-4">
+              <div class="icon-wrapper me-4">
+                <img src="assets/img/icons/email3.svg" alt="Email Icon" width="28">
+              </div>
+              <div class="content">
+                <p class="label text-muted mb-1">Email Address</p>
+                <a href="mailto:team@tecmetaverse.com" class="contact-link">team@tecmetaverse.com</a>
+              </div>
+            </div>
+
+            <!-- Website -->
+            <div class="contact-item d-flex align-items-center mb-4">
+              <div class="icon-wrapper me-4">
+                <img src="assets/img/icons/email3.svg" alt="Website Icon" width="28">
+              </div>
+              <div class="content">
+                <p class="label text-muted mb-1">Our Website</p>
+                <a href="https://tecmetaverse.com" target="_blank" class="contact-link">www.tecmetaverse.com</a>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="contact-item d-flex align-items-start">
+              <div class="icon-wrapper me-4">
+                <img src="assets/img/icons/location3.svg" alt="Location Icon" width="28">
+              </div>
+              <div class="content">
+                <p class="label text-muted mb-1">Our Address</p>
+                <a href="https://www.google.com/maps/place/TecMetaverse/@18.5642566,73.7711113,17z/" target="_blank" class="contact-link">
+                  506, TecMetaverse Office, <br> PYRAMID AXIS, Baner Rd.,<br>Behind Croma Showroom,<br> Veerbhadra Nagar,  <br class="d-lg-block d-none">
+                  Pune - 411045, Maharashtra</a>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
+
+      <!-- Right Column - Contact Form -->
+      <div class="col-lg-6">
+        <div class="contact-form-wrapper bg-white rounded-3 p-4 p-lg-5">
+          <h4 class="form-title mb-4">Get In Touch</h4>
+          <form class="contact-form">
+            <div class="mb-3">
+              <input type="text" id="firstName" class="form-control" placeholder="First Name">
+            </div>
+            <div class="mb-3">
+              <input type="text" id="lastName" class="form-control" placeholder="Last Name">
+            </div>
+            <div class="mb-3">
+              <input type="email" id="email" class="form-control" placeholder="Email Address">
+            </div>
+            <div class="mb-3">
+              <input type="tel" id="phoneNumber" class="form-control" placeholder="Phone Number">
+            </div>
+            <div class="mb-4">
+              <textarea id="message" class="form-control" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="button" class="submit-btn" onclick="submitContactForm()">
+              Get In Touch <i class="fa-solid fa-arrow-right ms-2"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<style>
+.contact-main-inner-area {
+  background-color: #f8f9fa;
+}
+
+/* Typography */
+.subtitle {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #1a1a1a;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Contact Items */
+.contact-item {
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateX(5px);
+}
+
+.icon-wrapper {
+  width: 48px;
+  height: 48px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-link {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #6c5ce7;
+}
+
+/* Form Styling */
+.contact-form-wrapper {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+}
+
+.form-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.form-control {
+  height: 50px;
+  padding: 12px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #6c5ce7;
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 120px;
+}
+
+.submit-btn {
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.submit-btn:hover {
+  background: #5b4cc4;
+  transform: translateX(5px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .contact-content {
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+}
+</style>
 
 <script>
   const API_URL = 'https://tecmeta-backend.onrender.com/api/contact'; // Replace with your backend server URL
