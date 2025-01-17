@@ -3,6 +3,20 @@ a, a:hover {
   text-decoration: none;
 }
 
+.haha{
+  border: 1px solid #E6E6E6;
+    background: var(--Neutral-White, #FFF);
+    width: 100%;
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s16);
+    /* font-weight: var(--ztc-weight-semibold); */
+    /* color: var(--ztc-text-text-2); */
+    color: #6d7885;
+    padding: 5px;
+    height: 48px;
+    margin-top: 24px;
+}
+
 ul {
   padding: 0;
   margin: 0;

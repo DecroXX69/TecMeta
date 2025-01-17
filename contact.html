@@ -698,6 +698,21 @@
                           </div>
                       </div>
                       <div class="col-lg-12">
+                        <div class="input-area">
+                          <select name="service" id="service" class="country-area nice-select6 haha" >
+                            <option value="" data-display="Service Type">Service Type</option>
+                            <option value="Pay Per Click">Pay Per Click</option>
+                            <option value="SEO">SEO</option>
+                            <option value="Social Media Marketing">Social Media Marketing</option>
+                            <option value="Web Design and Development">Web Design and Development</option>
+                            <option value="Email Marketing">Email Marketing</option>
+                            <option value="Branding and Promotion">Branding and Promotion</option>
+                            <option value="Mobile App Development">Mobile App Development</option>
+                            <option value="Graphic Designing">Graphic Designing</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
                           <div class="input-area">
                             <textarea id="message" placeholder="Your Message"></textarea>
                           </div>
@@ -724,10 +739,11 @@
           const lastName = document.getElementById('lastName').value;
           const email = document.getElementById('email').value;
           const phoneNumber = document.getElementById('phoneNumber').value;
+          const service = document.getElementById('service').value;
           const message = document.getElementById('message').value;
 
           // Validate the form
-          if (!firstName || !lastName || !email || !phoneNumber || !message) {
+          if (!firstName || !lastName || !email || !phoneNumber || !service || !message) {
               alert('All fields are required!');
               return;
           }
@@ -743,6 +759,7 @@
                   lastname: lastName,
                   email,
                   phone: phoneNumber,
+                  service: service,
                   message,
               }),
           });

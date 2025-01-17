@@ -1284,6 +1284,170 @@
           <img src="assets/img/elements/star2.png" alt="" class="star2 keyframe5">
           <img src="assets/img/elements/star2.png" alt="" class="star3 keyframe5">
           <h2 class="text-anime-style-3">Get In Touch With Us Today</h2>
+          <p>Contact us today to discuss your project requirements and explore <br class="d-md-block d-none"> how we can assist you in achieving your business goals,</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5" data-aos="zoom-out" data-aos-duration="1000">
+        <div class="contact-info-area">
+          <h3>Contact Info</h3>
+          <p>Contact us today to discuss your project requirements and explore how we can assist you in achieving your business goals, </p>
+          <div class="space32"></div>
+          <div class="contact-auhtor-box">
+            <div class="icons">
+              <img src="assets/img/icons/location2.svg" alt="">
+            </div>
+            <div class="content">
+              <h4>Our Location</h4>
+              <a href="https://www.google.com/maps/place/TecMetaverse/@18.5642566,73.7685364,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bfffda1390d5:0xe9942f5eb5f7a78d!8m2!3d18.5642566!4d73.7711113!16s%2Fg%2F11w48jlpr2?entry=ttu&g_ep=EgoyMDI1MDEwNi4xIKXMDSoASAFQAw%3D%3D">506, TecMetaverse Office, PYRAMID AXIS<br>Baner Rd., Behind Croma Showroom, 
+                <br class="d-lg-block d-none">Veerbhadra Nagar, Baner, Pune - 411045.</a>
+            </div>
+          </div>
+          <div class="space40"></div>
+          <div class="contact-auhtor-box">
+            <div class="icons">
+              <img src="assets/img/icons/phone2.svg" alt="">
+            </div>
+            <div class="content">
+              <h4>Phone Number</h4>
+              <a href="tel:+91 9156764099">+91 9156764099
+              </a>
+            </div>
+          </div>
+          <div class="space40"></div>
+          <div class="contact-auhtor-box">
+            <div class="icons">
+              <img src="assets/img/icons/email2.svg" alt="">
+            </div>
+            <div class="content">
+              <h4>Email Address</h4>
+              <a href="mailto:team@tecmetaverse.com">team@tecmetaverse.com
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="zoom-out" data-aos-duration="1200">
+        <div class="contact-boxarea">
+           <h3>Get In Touch</h3>
+           <p>Contact us today to discuss your project requirements and explore <br class="d-lg-block d-none"> how we can assist you in achieving your business goals, </p>
+           <form id="contactForm">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="input-area">
+                  <input type="text" id="firstName" placeholder="First Name" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="input-area">
+                  <input type="text" id="lastName" placeholder="Last Name" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="input-area">
+                  <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="input-area">
+                  <input type="number" id="phoneNumber" placeholder="Phone Number" required>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="input-area">
+                  <select id="service" class="country-area nice-select6" required>
+                    <option value="" data-display="Service Type">Service Type</option>
+                    <option value="Pay Per Click">Pay Per Click</option>
+                    <option value="SEO">SEO</option>
+                    <option value="Social Media Marketing">Social Media Marketing</option>
+                    <option value="Web Design and Development">Web Design and Development</option>
+                    <option value="Email Marketing">Email Marketing</option>
+                    <option value="Branding and Promotion">Branding and Promotion</option>
+                    <option value="Mobile App Development">Mobile App Development</option>
+                    <option value="Graphic Designing">Graphic Designing</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="input-area">
+                  <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="input-area">
+                  <button type="button" class="header-btn1" onclick="submitContactForm()">Submit<span><i class="fa-solid fa-arrow-right"></i></span></button>
+                </div>
+              </div>
+             </div>
+           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const API_URL = 'https://tecmeta-backend.onrender.com/api/contact'; // Replace with your backend server URL
+
+async function submitContactForm() {
+    try {
+        // Collect form data
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
+        const email = document.getElementById('email').value;
+        const phoneNumber = document.getElementById('phoneNumber').value;
+        const service = document.getElementById('service').value;
+        const message = document.getElementById('message').value;
+
+        // Validate the form
+        if (!firstName || !lastName || !email || !phoneNumber || !service || !message) {
+            alert('All fields are required!');
+            return;
+        }
+
+        // Send data to the backend
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                firstname: firstName,
+                lastname: lastName,
+                email,
+                phone: phoneNumber,
+                service: service,
+                message,
+            }),
+        });
+
+        // Handle the response
+        if (response.ok) {
+            const result = await response.json();
+            alert('Thank you for contacting us! ' + result.message);
+            document.getElementById('contactForm').reset();
+        } else {
+            throw new Error('Failed to send the message.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again later.');
+    }
+}
+</script>
+
+
+
+
+<!-- <div class="contact1-section-area sp6">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 m-auto">
+        <div class="contact-header-area text-center heading2">
+          <img src="assets/img/elements/star2.png" alt="" class="star2 keyframe5">
+          <img src="assets/img/elements/star2.png" alt="" class="star3 keyframe5">
+          <h2 class="text-anime-style-3">Get In Touch With Us Today</h2>
           <p>Contact us today to discuss your project requirements and explore  <br class="d-md-block d-none"> how we can assist you in achieving your business goals,</p>
         </div>
       </div>
@@ -1332,7 +1496,7 @@
         <div class="contact-boxarea">
            <h3>Get In Touch</h3>
            <p>Contact us today to discuss your project requirements and explore <br class="d-lg-block d-none"> how we can assist you in achieving your business goals, </p>
-           <form action="https://api.web3forms.com/submit" method="POST">
+           <form method="POST">
             <div class="row">
               <div class="col-lg-6">
                 <div class="input-area">
@@ -1357,16 +1521,16 @@
               </div>
               <div class="col-lg-12">
                 <div class="input-area">
-                  <select name="country" id="country" class="country-area nice-select6">
-                    <option value="1" data-display="Service Type">Service Type</option>
-                    <option value="">Pay Per Click</option>
-                    <option value="">SEO</option>
-                    <option value="">Social Media Marketing</option>
-                    <option value="">Web Design and Development</option>
-                    <option value="">Email Marketing</option>
-                    <option value="">Branding and Promotion</option>
-                    <option value="">Mobile App Development</option>
-                    <option value="">Graphic Designing</option>
+                  <select name="service" id="service" class="country-area nice-select6">
+                    <option value="" data-display="Service Type">Service Type</option>
+                    <option value="Pay Per Click">Pay Per Click</option>
+                    <option value="SEO">SEO</option>
+                    <option value="Social Media Marketing">Social Media Marketing</option>
+                    <option value="Web Design and Development">Web Design and Development</option>
+                    <option value="Email Marketing">Email Marketing</option>
+                    <option value="Branding and Promotion">Branding and Promotion</option>
+                    <option value="Mobile App Development">Mobile App Development</option>
+                    <option value="Graphic Designing">Graphic Designing</option>
                   </select>
                 </div>
               </div>
@@ -1377,7 +1541,7 @@
               </div>
               <div class="col-lg-12">
                 <div class="input-area">
-                  <button class="header-btn1">Free Consultation <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                  <button class="header-btn1" onclick="submitContactForm()">Submit<span><i class="fa-solid fa-arrow-right"></i></span></button>
                 </div>
               </div>
              </div>
@@ -1386,7 +1550,56 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+
+<!-- <script>
+  const API_URL = 'https://tecmeta-backend.onrender.com/api/contact'; // Replace with your backend server URL
+
+  async function submitContactForm() {
+      try {
+          // Collect form data
+          const firstName = document.getElementById('firstName').value;
+          const lastName = document.getElementById('lastName').value;
+          const email = document.getElementById('email').value;
+          const phoneNumber = document.getElementById('phoneNumber').value;
+          const service = document.getElementById('service').value;
+          const message = document.getElementById('message').value;
+
+          // Validate the form
+          if (!firstName || !lastName || !email || !phoneNumber || !service || !message) {
+              alert('All fields are required!');
+              return;
+          }
+
+          // Send data to the backend
+          const response = await fetch(API_URL, {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                  firstname: firstName,
+                  lastname: lastName,
+                  email,
+                  phone: phoneNumber,
+                  service: service,
+                  message,
+              }),
+          });
+
+          // Handle the response
+          if (response.ok) {
+              const result = await response.json();
+              alert('Thank you for contacting us! ' + result.message);
+          } else {
+              throw new Error('Failed to send the message.');
+          }
+      } catch (error) {
+          console.error('Error:', error);
+          alert('An error occurred. Please try again later.');
+      }
+  }
+</script> -->
 <!--===== CONTACT AREA ENDS =======-->
 
 <!--===== CTA AREA STARTS =======-->
