@@ -1013,146 +1013,212 @@
 
 
 <!--===== TESTIMONIAL AREA STARTS =======-->
-<div class="testimonial1-section-area sp6">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 m-auto">
-        <div class="testimonial-header heading2 text-center">
-          <img src="assets/img/elements/star2.png" alt="" class="star2 keyframe5">
-          <img src="assets/img/elements/star2.png" alt="" class="star3 keyframe5">
-          <h2 class="text-anime-style-3">What Our Client Say <br class="d-md-block d-none"> On Google Reviews</h2>
-          <p data-aos="fade-up" data-aos-duration="1000">Don't just take our word for it. Hear what our satisfied clients <br class="d-md-block d-none"> have to say about their experience partnering with SEOC</p>
+<!-- Testimonial Section -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+  />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .testimonials-section {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #ffffff;
+    }
+
+    .testimonials-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .testimonials-section p {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .testimonials-slider-area {
+      display: flex;
+      justify-content: center;
+    }
+
+    .testimonial-boxarea {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      background: #f9f9f9;
+      min-height: 250px;
+    }
+
+    .testimonial-boxarea .pera p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin: 0 auto;
+      max-width: 80%;
+    }
+
+    .list-area {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .testimonial-google-icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-stars {
+      display: flex;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin: 10px 0;
+      color: rgb(78, 47, 218); /* Updated star color */
+    }
+
+    .testimonial-stars li {
+      margin: 0 5px;
+      list-style: none;
+    }
+
+    .testimonial-name {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .owl-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .owl-dot {
+      width: 10px;
+      height: 10px;
+      background: #aaa;
+      border-radius: 50%;
+      margin: 0 5px;
+      transition: background 0.3s;
+    }
+
+    .owl-dot.active {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+  <section class="testimonials-section">
+    <h2>What Our Clients Say On Google Reviews</h2>
+    <p>
+      Don't just take our word for it. Hear what our satisfied clients have to
+      say about their experience partnering with TecMetaverse.
+    </p>
+    <div class="owl-carousel testimonials-slider-area">
+      <!-- Shilpa's Review -->
+      <div class="testimonial-boxarea">
+        <div class="pera">
+          <p>
+            "The professionalism and commitment to our success showcased by
+            Tecmetaverse have helped me explore new business opportunities and
+            strategies with confidence."
+          </p>
+        </div>
+        <div class="list-area">
+          <img
+            src="assets/img/icons/google.svg"
+            alt="Google"
+            class="testimonial-google-icon"
+          />
+          <ul class="testimonial-stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <p class="testimonial-name">SHILPA</p>
+        </div>
+      </div>
+
+      <!-- Elena's Review -->
+      <div class="testimonial-boxarea">
+        <div class="pera">
+          <p>
+            "I have found Tecmetaverse to be a reliable partner for all our
+            financial needs. Their expertise has significantly contributed to
+            our company's financial growth and stability. I wholeheartedly
+            endorse Tecmetaverse to any enterprise seeking to enhance their
+            digital marketing endeavors."
+          </p>
+        </div>
+        <div class="list-area">
+          <img
+            src="assets/img/icons/google.svg"
+            alt="Google"
+            class="testimonial-google-icon"
+          />
+          <ul class="testimonial-stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <p class="testimonial-name">ELENA PETROV</p>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-8 m-auto" data-aos="fade-up" data-aos-duration="1000">
-        <div class="testimonials-slider-area owl-carousel">
-          <div class="testimonial-boxarea">
-            <div class="row">
-              <div class="col-lg-5">
-                <div class="pera">
-                  <p>"Choosing Tecmetaverse as our digital marketing partner has been one of the best decisions for our business. Their professionalism, attention to detail, and data-driven approach have resulted in tangible growth for our online brand. We appreciate their dedication and proactive communication, and we are excited about the results we have achieved together."</p>
-                  <div class="space100"></div>
-                  <div class="space30"></div>
-                  <div class="list-area">
-                    <div class="list">
-                      <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <a href="team.html">SHIVANSH PANDEY</a>
-                    </div>
-                    <img src="assets/img/icons/google.svg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-7">
-                <div class="images">
-                  <img src="assets/img/all-images/testimonial-img1.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
+  </section>
 
-          <div class="testimonial-boxarea">
-            <div class="row">
-              <div class="col-lg-5">
-                <div class="pera">
-                  <p>Our experience with Tecmetaverse has revolutionized our business operations. Their profound understanding of digital marketing strategies has greatly enhanced our online visibility and interaction with customers. The Tecmetavers team not only possesses extensive knowledge but also demonstrates exceptional responsiveness and proactivity.</p>
-                  <div class="space100"></div>
-                  <div class="space30"></div>
-                  <div class="list-area">
-                    <div class="list">
-                      <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <a href="team.html">VENKAT</a>
-                    </div>
-                    <img src="assets/img/icons/google.svg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-7">
-                <div class="images">
-                  <img src="assets/img/all-images/testimonial-img2.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 2,
+          },
+        },
+      });
+    });
+  </script>
+</body>
+</html>
 
-          <div class="testimonial-boxarea">
-            <div class="row">
-              <div class="col-lg-5">
-                <div class="pera">
-                  <p>Tecmetaverse doesn't just promise results; they deliver them consistently. Their team's professionalism and commitment to our success made them an indispensable partner for our digital marketing efforts." Support and guidence from them explore my business get over there to take suggestions and best Upcoming movies thank you All </p>
-                  <div class="space100"></div>
-                  <div class="space30"></div>
-                  <div class="list-area">
-                    <div class="list">
-                      <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <a href="team.html">SHILPA</a>
-                    </div>
-                    <img src="assets/img/icons/google.svg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-7">
-                <div class="images">
-                  <img src="assets/img/all-images/testimonial-img2.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="testimonial-boxarea">
-            <div class="row">
-              <div class="col-lg-5">
-                <div class="pera">
-                  <p>I have found Tecmetaverse to be a reliable partner for all our financial needs. Their expertise has significantly contributed to our company's financial growth and stability.I wholeheartedly endorse Tecmetaverse to any enterprise seeking to enhance their digital marketing endeavors.Support and guidence from them explore my business to take suggestions "* </p>
-                  <div class="space100"></div>
-                  <div class="space30"></div>
-                  <div class="list-area">
-                    <div class="list">
-                      <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <a href="team.html">Elena Petrov</a>
-                    </div>
-                    <img src="assets/img/icons/google.svg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-7">
-                <div class="images">
-                  <img src="assets/img/all-images/testimonial-img2.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 <!--===== TESTIMONIAL AREA ENDS =======-->
 
 <!--===== BLOG AREA STARTS =======-->
