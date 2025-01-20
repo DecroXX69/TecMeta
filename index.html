@@ -1489,15 +1489,30 @@ async function submitContactForm() {
             }),
         });
 
+        // Log the response status and body for debugging
+        console.log('Response Status:', response.status);
+        const responseBody = await response.json();
+        console.log('Response Body:', responseBody);
+
         // Handle the response
+        // if (response.ok) {
+        //     const result = await response.json();
+        //     alert('Thank you for contacting us! ' + result.message);
+        //     document.getElementById('contactForm').reset();
+        // } else {
+        //     throw new Error('Failed to send the message.');
+        // }
         if (response.ok) {
-            const result = await response.json();
-            alert('Thank you for contacting us! ' + result.message);
+            alert('Thank you for contacting us! ' + responseBody.message);
             document.getElementById('contactForm').reset();
         } else {
-            throw new Error('Failed to send the message.');
+            throw new Error(responseBody.message || 'Failed to send the message.');
         }
-    } catch (error) {
+    // } catch (error) {
+    //     console.error('Error:', error);
+    //     alert('An error occurred. Please try again later.');
+    // }
+  } catch (error) {
         console.error('Error:', error);
         alert('An error occurred. Please try again later.');
     }

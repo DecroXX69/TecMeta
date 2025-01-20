@@ -902,19 +902,20 @@ textarea.form-control {
               }),
           });
 
-          // Handle the response
-          if (response.ok) {
-              const result = await response.json();
-              alert('Thank you for contacting us! ' + result.message);
-              document.getElementById('contactForm').reset();
-          } else {
-              throw new Error('Failed to send the message.');
-          }
-      } catch (error) {
-          console.error('Error:', error);
-          alert('An error occurred. Please try again later.');
-      }
-  }
+        // Handle the response
+        if (response.ok) {
+            const result = await response.json();
+            alert('Thank you for contacting us! ' + result.message);
+            // document.getElementById('contactForm').reset();
+            document.querySelector('.contact-form').reset();
+        } else {
+            throw new Error('Failed to send the message.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        // alert('An error occurred. Please try again later.');
+    }
+}
 </script>
 
 
