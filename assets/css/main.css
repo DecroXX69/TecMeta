@@ -31671,4 +31671,27 @@ Location:
   transition: all 0.4s;
 }
 
+
+/* Style the sub-dropdown */
+.sub-dropdown {
+  display: none;
+  position: relative; /* Keeps it inside the parent */
+  background: transparent; /* No separate box */
+  list-style: none;
+  padding: 0;
+  margin-top: 0; /* Small gap */
+}
+
+/* Show sub-dropdown when hovering over Digital Marketing */
+.dropdown:hover .sub-dropdown {
+  display: block;
+}
+
+/* Align sub-items properly */
+.sub-dropdown li {
+  padding: 0px 15px;
+  margin: 0;
+  line-height: 1.4;
+}
+
 /*============= CASE STUDY CSS AREA ENDS ===============*//*# sourceMappingURL=main.css.map */
