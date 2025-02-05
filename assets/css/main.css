@@ -140,7 +140,7 @@ img {
 }
 
 .space40 {
-  height: 40px;
+  height: 25px;
 }
 
 .space42 {
@@ -192,7 +192,7 @@ img {
 }
 
 .space66 {
-  height: 66px;
+  height: 30px;
 }
 
 .space68 {
@@ -262,7 +262,10 @@ img {
 .space100 {
   height: 100px;
 }
-
+.row{
+  display: flex !important; /* Override Bootstrap if needed */
+    justify-content: center;
+}
 @keyframes animation-5 {
   0% {
     transform: scale(1);
@@ -703,7 +706,7 @@ Location:
 
 .heading2 h5 {
   font-family: var(--ztc-family-font1);
-  font-size: var(--ztc-font-size-font-s16);
+  font-size: var(--ztc-font-size-font-s40);
   line-height: var(--ztc-font-size-font-s16);
   font-weight: var(--ztc-weight-medium);
   color: var(--ztc-text-text-4);
@@ -712,7 +715,7 @@ Location:
   position: relative;
   z-index: 1;
   display: inline-block;
-  margin-bottom: 16px;
+  margin-bottom: 35px;
 }
 .heading2 h5 img {
   margin: 0 6px 0 0;
@@ -721,8 +724,8 @@ Location:
   position: absolute;
   content: "";
   left: 0;
-  top: -6px;
-  width: 20px;
+  top: -25px;
+  width: 75px;
   height: 2px;
   transition: all 0.4s;
   background: var(--ztc-text-text-4);
@@ -4240,6 +4243,9 @@ Location:
 }
 .service1-section-area .service-all-boxes-area {
   display: flex;
+  justify-content: center; /* Ensures even alignment */
+  align-items: stretch; /* Makes all blocks the same height */
+  gap: 50px;
 }
 @media (max-width: 767px) {
   .service1-section-area .service-all-boxes-area {
@@ -4271,7 +4277,7 @@ Location:
   line-height: var(--ztc-font-size-font-s30);
   font-weight: var(--ztc-weight-semibold);
   color: var(--ztc-text-text-2);
-  display: inline-block;
+  display: inline-block;     
   transition: all 0.4s;
 }
 .service1-section-area .service-all-boxes-area .service-boxarea p {
@@ -6575,6 +6581,7 @@ Location:
   position: absolute;
   bottom: 0;
   left: -180px;
+  width: 15%;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero1-section-area .header-images-area .main-images-area .auhtor-images .header-author-img1 {
@@ -6585,6 +6592,7 @@ Location:
   position: absolute;
   top: -40px;
   right: -60px;
+  width: 18%
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero1-section-area .header-images-area .main-images-area .auhtor-images .header-author-img2 {
@@ -30524,6 +30532,12 @@ Location:
   background-size: cover;
   background-repeat: no-repeat;
 }
+.case1-section-area .cs_case_study_thumb.cs_case_study_thumb22 {
+  background-image: url(../img/all-images/case-img22.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .case1-section-area .cs_case_study.cs_style_1.cs_hover_active {
   margin: 0px 8px;
   border-radius: 5px;
@@ -31669,6 +31683,29 @@ Location:
   line-height: 28px;
   display: inline-block;
   transition: all 0.4s;
+}
+
+
+/* Style the sub-dropdown */
+.sub-dropdown {
+  display: none;
+  position: relative; /* Keeps it inside the parent */
+  background: transparent; /* No separate box */
+  list-style: none;
+  padding: 0;
+  margin-top: 0; /* Small gap */
+}
+
+/* Show sub-dropdown when hovering over Digital Marketing */
+.dropdown:hover .sub-dropdown {
+  display: block;
+}
+
+/* Align sub-items properly */
+.sub-dropdown li {
+  padding: 0px 15px;
+  margin: 0;
+  line-height: 1.4;
 }
 
 /*============= CASE STUDY CSS AREA ENDS ===============*//*# sourceMappingURL=main.css.map */
