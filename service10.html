@@ -749,7 +749,16 @@ margin-bottom: 2em;">
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="service-images">
-                        <img src="assets/img/all-images/blockchain.jpg" alt="" style="padding-right: 25px;">
+                      <!-- Hide Image in Mobile View Start -->
+                      <style>
+                        @media only screen and (max-width: 768px) {
+                            .mobile-hide {
+                                display: none !important;
+                            }
+                        }
+                    </style>
+                    <!-- Hide Image in Mobile View End -->
+                      <img src="assets/img/all-images/blockchain.jpg" alt="" class="mobile-hide" style="padding-right: 25px; display: block;">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -776,14 +785,16 @@ margin-bottom: 2em;">
             gap: 20px;
             padding: 50px;
             flex-wrap: wrap;
-            max-width: 1200px;
+            max-width: 1500px;
             margin: 0 auto;
           }
       
           .card {
             flex: 1;
             min-width: 280px;
-            max-width: 400px;
+            max-width: 500px;
+            /* Set fixed height for all cards */
+            height: 350px;
             background: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -791,14 +802,17 @@ margin-bottom: 2em;">
             text-align: center;
             padding: 20px;
             position: relative;
-            transition: transform 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 10px;
+            isolation: isolate;
           }
       
           .card:hover {
+            height: auto;
+            min-height: 300px;
             transform: translateY(-10px);
             background: rgba(220, 246, 248, 1);
             border-color: black;
@@ -843,7 +857,7 @@ margin-bottom: 2em;">
           .subtitle {
             margin: 10px 0;
             color: #666;
-            font-weight:600;
+            font-weight: 600;
           }
       
           .extra-info {
@@ -855,9 +869,13 @@ margin-bottom: 2em;">
             font-size: 0.9rem;
             color: #555;
             font-weight: 500;
+            position: absolute;
+            width: calc(100% - 40px);
+            text-align:center; /* Center the text */
           }
       
           .card:hover .extra-info {
+            position: relative;
             max-height: 200px;
             opacity: 1;
             margin-top: 15px;
@@ -874,6 +892,11 @@ margin-bottom: 2em;">
               min-width: 100%;
               margin: 5px 0;
               padding: 15px;
+              height: 280px;
+            }
+      
+            .card:hover {
+              min-height: 280px;
             }
       
             .image-container {
@@ -888,12 +911,10 @@ margin-bottom: 2em;">
       
             .subtitle {
               font-size: 0.95rem;
-              font-weight: 600;
             }
       
             .extra-info {
               font-size: 0.85rem;
-
             }
           }
       
@@ -915,6 +936,7 @@ margin-bottom: 2em;">
           }
         </style>
         <!-- Styling End -->
+        <!-- Blockchain Features Start -->
         <div class="cards-container">
           <!-- Card1-DApps -->
           <div class="card">
@@ -958,7 +980,7 @@ margin-bottom: 2em;">
             </div>
           </div>
         </div>
-      
+        <!-- Blockchain Features End -->
         </div>
     </div>
 </div>
