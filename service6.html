@@ -748,13 +748,20 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="service-images">
-                        <img src="assets/img/all-images/service-img19.png" alt="">
+                      <style>
+                        @media only screen and (max-width: 768px) {
+                            .mobile-hide {
+                                display: none !important;
+                            }
+                        }
+                    </style>
+                        <img src="assets/img/all-images/services/graphics.png" alt="" class="mobile-hide" style="padding-right: 25px; display: block;">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="service-textarea heading2">
                         <h5>Graphic Designing</h5>
-                        <h2>Graphic Designing Services</h2>
+                        <h2>Unleashing the Power of Visual Communication.</h2>
                         <p> In a world where first impressions matter, visually striking designs are essential to captivate your audience and elevate your brand. At Tecmetaverse, we specialize in creating stunning, professional, and engaging graphic designs
                             that leave a lasting impact. Our graphics designing services combine creativity with functionality to deliver designs that not only look great but also communicate your brand’s message effectively. Whether you need a fresh
                             logo, marketing materials, or a complete brand overhaul, our expert design team is here to bring your vision to life.<br class="d-lg-block d-none"> <br class="d-lg-block d-none"> <br class="d-lg-block d-none"> </p>
@@ -765,6 +772,212 @@
                     </div>
                 </div>
             </div>
+            <!-- **************Card View for Graphics Design Services**************** -->
+        <!-- Styling Start -->
+        <style>
+          .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+            flex-wrap: wrap;
+            max-width: 1500px;
+            margin: 0 auto;
+          }
+      
+          .card {
+            flex: 1;
+            min-width: 280px;
+            max-width: 500px;
+            /* Set fixed height for all cards */
+            height: 350px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            isolation: isolate;
+          }
+      
+          .card:hover {
+            height: auto;
+            min-height: 300px;
+            transform: translateY(-10px);
+            background: rgba(249, 234, 255, 1);
+            border-color: rgba(121, 80, 255, 1);
+          }
+      
+          .image-container {
+            width: 160px;
+            height: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            transition: all 0.3s ease-in-out;
+          }
+      
+          .card:hover .image-container {
+            width: 120px;
+            height: 120px;
+          }
+      
+          .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+          }
+      
+          .content {
+            flex: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center all content horizontally */
+          }
+      
+          h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: rgba(121, 80, 255, 1);
+          }
+      
+          .subtitle {
+            margin: 10px 0;
+            color: #666;
+            font-weight: 600;
+          }
+      
+          .extra-info {
+            max-height: 0;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            overflow: hidden;
+            margin: 0;
+            font-size: 0.9rem;
+            color: #555;
+            font-weight: 500;
+            position: absolute;
+            width: calc(100% - 40px);
+            text-align:center; /* Center the text */
+          }
+      
+          .card:hover .extra-info {
+            position: relative;
+            max-height: 200px;
+            opacity: 1;
+            margin-top: 15px;
+          }
+      
+          /* Mobile Responsiveness */
+          @media screen and (max-width: 768px) {
+            .cards-container {
+              padding: 10px;
+              gap: 15px;
+            }
+      
+            .card {
+              min-width: 100%;
+              margin: 5px 0;
+              padding: 15px;
+              height: 280px;
+            }
+      
+            .card:hover {
+              min-height: 280px;
+            }
+      
+            .image-container {
+              width: 140px;
+              height: 140px;
+              margin-bottom: 15px;
+            }
+      
+            h3 {
+              font-size: 1.3rem;
+            }
+      
+            .subtitle {
+              font-size: 0.95rem;
+            }
+      
+            .extra-info {
+              font-size: 0.85rem;
+            }
+          }
+      
+          /* Small Mobile Devices */
+          @media screen and (max-width: 480px) {
+            .image-container {
+              width: 120px;
+              height: 120px;
+            }
+      
+            .card:hover .image-container {
+              width: 100px;
+              height: 100px;
+            }
+      
+            h3 {
+              font-size: 1.2rem;
+            }
+          }
+        </style>
+        <!-- Styling End -->
+        <!-- Graphics Design Features Start -->
+        <div class="cards-container">
+          <!-- Card1-Logo_Design -->
+          <div class="card">
+            <div class="image-container">
+              <img src="assets/img/all-images/services/logo.png" alt="Logo Design Icon">
+            </div>
+            <div class="content">
+              <h3>Logo Design</h3>
+              <p class="subtitle">The Foundation of Your Brand</p>
+              <p class="extra-info">
+                We craft unique logos that embody your brand's essence. Our process blends creative vision with strategic thinking to deliver memorable visuals that resonate with your audience.
+              </p>
+            </div>
+          </div>
+      
+          <!-- Card2-Brand_Identity_Design -->
+          <div class="card">
+            <div class="image-container">
+              <img src="assets/img/all-images/services/branding.png" alt="Brand Identity Icon">
+            </div>
+            <div class="content">
+              <h3>Brand Identity Design</h3>
+              <p class="subtitle"> Building a Consistent Brand Experience</p>
+              <p class="extra-info">
+                We go beyond logos to build comprehensive brand identities. From color palettes and typography to imagery and tone of voice, we create a cohesive visual system that strengthens brand recognition and fosters customer loyalty.
+              </p>
+            </div>
+          </div>
+      
+          <!-- UI/UX Design -->
+          <div class="card">
+            <div class="image-container">
+              <img src="assets/img/all-images/services/ui_ux.png" alt="UI/UX Icon">
+            </div>
+            <div class="content">
+              <h3>Website & UI/UX Design</h3>
+              <p class="subtitle">Creating User-Friendly and Engaging Digital Experiences</p>
+              <p class="extra-info">
+                We create visually stunning and user-friendly websites and applications. Our focus is on crafting intuitive interfaces that engage visitors, guide them towards their goals, and deliver exceptional user experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Graphics Design Features End -->
         </div>
     </div>
     <!--===== ABOUT AREA ENDS =======-->
