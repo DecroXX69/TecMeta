@@ -108,13 +108,20 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="service-images">
-                        <img src="assets/img/all-images/service-img19.png" alt="">
+                      <style>
+                        @media only screen and (max-width: 768px) {
+                            .mobile-hide {
+                                display: none !important;
+                            }
+                        }
+                    </style>
+                        <img src="assets/img/all-images/services/graphics.png" alt="" class="mobile-hide" style="padding-right: 25px; display: block;">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="service-textarea heading2">
                         <h5>Graphic Designing</h5>
-                        <h2>Graphic Designing Services</h2>
+                        <h2>Unleashing the Power of Visual Communication.</h2>
                         <p> In a world where first impressions matter, visually striking designs are essential to captivate your audience and elevate your brand. At Tecmetaverse, we specialize in creating stunning, professional, and engaging graphic designs
                             that leave a lasting impact. Our graphics designing services combine creativity with functionality to deliver designs that not only look great but also communicate your brand’s message effectively. Whether you need a fresh
                             logo, marketing materials, or a complete brand overhaul, our expert design team is here to bring your vision to life.<br class="d-lg-block d-none"> <br class="d-lg-block d-none"> <br class="d-lg-block d-none"> </p>
@@ -125,9 +132,972 @@
                     </div>
                 </div>
             </div>
+            <!-- **************Card View for Graphics Design Services**************** -->
+        <!-- Styling Start -->
+        <style>
+          .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+            flex-wrap: wrap;
+            max-width: 1500px;
+            margin: 0 auto;
+          }
+      
+          .card {
+            flex: 1;
+            min-width: 280px;
+            max-width: 500px;
+            /* Set fixed height for all cards */
+            height: 350px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            isolation: isolate;
+          }
+      
+          .card:hover {
+            height: auto;
+            min-height: 300px;
+            transform: translateY(-10px);
+            background: rgba(249, 234, 255, 1);
+            border-color: rgba(121, 80, 255, 1);
+          }
+      
+          .image-container {
+            width: 160px;
+            height: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            transition: all 0.3s ease-in-out;
+          }
+      
+          .card:hover .image-container {
+            width: 120px;
+            height: 120px;
+          }
+      
+          .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+          }
+      
+          .content {
+            flex: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center all content horizontally */
+          }
+      
+          h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: rgba(121, 80, 255, 1);
+          }
+      
+          .subtitle {
+            margin: 10px 0;
+            color: #666;
+            font-weight: 600;
+          }
+      
+          .extra-info {
+            max-height: 0;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            overflow: hidden;
+            margin: 0;
+            font-size: 0.9rem;
+            color: #555;
+            font-weight: 500;
+            position: absolute;
+            width: calc(100% - 40px);
+            text-align:center; /* Center the text */
+          }
+      
+          .card:hover .extra-info {
+            position: relative;
+            max-height: 200px;
+            opacity: 1;
+            margin-top: 15px;
+          }
+      
+          /* Mobile Responsiveness */
+          @media screen and (max-width: 768px) {
+            .cards-container {
+              padding: 10px;
+              gap: 15px;
+            }
+      
+            .card {
+              min-width: 100%;
+              margin: 5px 0;
+              padding: 15px;
+              height: 280px;
+            }
+      
+            .card:hover {
+              min-height: 280px;
+            }
+      
+            .image-container {
+              width: 140px;
+              height: 140px;
+              margin-bottom: 15px;
+            }
+      
+            h3 {
+              font-size: 1.3rem;
+            }
+      
+            .subtitle {
+              font-size: 0.95rem;
+            }
+      
+            .extra-info {
+              font-size: 0.85rem;
+            }
+          }
+      
+          /* Small Mobile Devices */
+          @media screen and (max-width: 480px) {
+            .image-container {
+              width: 120px;
+              height: 120px;
+            }
+      
+            .card:hover .image-container {
+              width: 100px;
+              height: 100px;
+            }
+      
+            h3 {
+              font-size: 1.2rem;
+            }
+          }
+        </style>
+        <!-- Styling End -->
+        <!-- Graphics Design Features Start -->
+        <div class="cards-container">
+          <!-- Card1-Logo_Design -->
+          <div class="card">
+            <div class="image-container">
+              <img src="assets/img/all-images/services/logo.png" alt="Logo Design Icon">
+            </div>
+            <div class="content">
+              <h3>Logo Design</h3>
+              <p class="subtitle">The Foundation of Your Brand</p>
+              <p class="extra-info">
+                We craft unique logos that embody your brand's essence. Our process blends creative vision with strategic thinking to deliver memorable visuals that resonate with your audience.
+              </p>
+            </div>
+          </div>
+      
+          <!-- Card2-Brand_Identity_Design -->
+          <div class="card">
+            <div class="image-container">
+              <img src="assets/img/all-images/services/branding.png" alt="Brand Identity Icon">
+            </div>
+            <div class="content">
+              <h3>Brand Identity Design</h3>
+              <p class="subtitle"> Building a Consistent Brand Experience</p>
+              <p class="extra-info">
+                We go beyond logos to build comprehensive brand identities. From color palettes and typography to imagery and tone of voice, we create a cohesive visual system that strengthens brand recognition and fosters customer loyalty.
+              </p>
+            </div>
+          </div>
+      
+          <!-- UI/UX Design -->
+          <div class="card">
+            <div class="image-container">
+              <img src="assets/img/all-images/services/ui_ux.png" alt="UI/UX Icon">
+            </div>
+            <div class="content">
+              <h3>Website & UI/UX Design</h3>
+              <p class="subtitle">Creating User-Friendly and Engaging Digital Experiences</p>
+              <p class="extra-info">
+                We create visually stunning and user-friendly websites and applications. Our focus is on crafting intuitive interfaces that engage visitors, guide them towards their goals, and deliver exceptional user experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Graphics Design Features End -->
         </div>
     </div>
+    <!--===== ABOUT AREA ENDS =======-->
 
+    <!--===== TESTIMONIAL AREA STARTS =======-->
+    <!--<div class="slider-section-area slider-inner sp5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-2">
+          <div class="sldier-head">
+            <p>Trusted by  <br class="d-lg-block d-none"> Top Companies</p>
+          </div>
+        </div>
+        <div class="col-lg-10">
+          <div class="slider-images-area owl-carousel">
+            <div class="img1">
+              <img src="assets/img/elements/brand-img1.png" alt="">
+            </div>
+            <div class="img1">
+              <img src="assets/img/elements/brand-img2.png" alt="">
+            </div>
+            <div class="img1">
+              <img src="assets/img/elements/brand-img3.png" alt="">
+            </div>
+            <div class="img1">
+              <img src="assets/img/elements/brand-img4.png" alt="">
+            </div>
+            <div class="img1">
+              <img src="assets/img/elements/brand-img5.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--===== TESTIMONIAL AREA ENDS =======-->
+
+    <!--===== WORK AREA STARTS =======-->
+    <!--div class="works-inner-section-area sp1">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6">
+                <div class="about-all-images-area">
+                    <img src="assets/img/elements/elements14.png" alt="" class="elements12 keyframe5">
+                    <img src="assets/img/elements/elements15.png" alt="" class="elements13 keyframe5">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <div class="img1 ">
+                            <div class="space100"></div>
+                          <img src="assets/img/all-images/about-img6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <div class="img2 ">
+                          <img src="assets/img/all-images/service-img5.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="works-header-area heading2 specing2">
+                    <h5>Graphic designing</h5>
+                    <h2>Compeling Designs
+                    </h2>
+                    <p> At TecMetaverse, we specialize in crafting visually captivating designs that leave a lasting impression. Our team of skilled graphic designers is dedicated to transforming your ideas into stunning reality.</p>
+                    <div class="space16"></div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="space100 d-lg-block d-none"></div>
+        <div class="space30 d-lg-none d-block"></div>
+        <div class="row align-items-center">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4">
+                <div class="works-header-area heading2">
+                    <h5>Graphic designing</h5>
+                    <h2>Our Services:</h2>
+                    <p>Logo Design, Branding, Print Design, Web Design, Social Media Graphics, Illustration, Infographics, UI/UX Design</p>
+                    <div class="space16"></div>
+                    
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="about-all-images-area">
+                    <img src="assets/img/elements/elements14.png" alt="" class="elements12 keyframe5">
+                    <img src="assets/img/elements/elements15.png" alt="" class="elements13 keyframe5">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <div class="img1 ">
+                            <div class="space100"></div>
+                          <img src="assets/img/all-images/service-img6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <div class="img2 ">
+                          <img src="assets/img/all-images/service-img7.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+
+        <!--div class="space100 d-lg-block d-none"></div>
+        <div class="space30 d-lg-none d-block"></div>
+        <div class="row align-items-center">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6">
+                <div class="about-all-images-area">
+                    <img src="assets/img/elements/elements14.png" alt="" class="elements12 keyframe5">
+                    <img src="assets/img/elements/elements15.png" alt="" class="elements13 keyframe5">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <div class="img1 ">
+                            <div class="space100"></div>
+                          <img src="assets/img/all-images/service-img8.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <div class="img2 ">
+                          <img src="assets/img/all-images/service-img9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="works-header-area heading2 specing2">
+                    <h5>Graphic designing</h5>
+                    <h2>Creative, Personalized Campaigns: </h2>
+                    <p>We create personalized, creative email campaigns that speak directly to your audience, increasing the likelihood of opens and clicks.</p>
+                    <div class="space16"></div>
+                </div>
+                
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="space100 d-lg-block d-none"></div>
+        <div class="space30 d-lg-none d-block"></div>
+        <div class="row align-items-center">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4">
+                <div class="works-header-area heading2">
+                    <h5>Graphic designing</h5>
+                    <h2>Comprehensive Email Management:</h2>
+                    <p>From designing emails to managing lists and analyzing performance, we provide a complete suite of Graphic designing services.</p>
+                    <div class="space16"></div>
+                    
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="about-all-images-area">
+                    <img src="assets/img/elements/elements14.png" alt="" class="elements12 keyframe5">
+                    <img src="assets/img/elements/elements15.png" alt="" class="elements13 keyframe5">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <div class="img1 ">
+                            <div class="space100"></div>
+                          <img src="assets/img/all-images/service-img6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <div class="img2 ">
+                          <img src="assets/img/all-images/service-img7.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+</div>
+<!--===== WORK AREA ENDS =======-->
+
+
+
+    <!--===== CTA AREA STARTS =======-->
+    <!--<div class="cta-section-area others-cta">
+  <img src="assets/img/bg/cta-bg1.png" alt="" class="cta-bg1 aniamtion-key-2">
+  <img src="assets/img/bg/cta-bg2.png" alt="" class="cta-bg2 aniamtion-key-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 m-auto">  
+        <div class="cta-header-area text-center sp4 heading2">
+          <h2>Competitor Analysis</h2>
+          <p>Find the keywords your competitors rank for and analyze their <br class="d-lg-block d-none"> data insights to uncover their SEO strategy in one click</p>
+          <div class="space32"></div>
+          <div class="form-area">
+            <form>
+              <div class="input-area">
+                <span><i class="fa-solid fa-link"></i></span>
+                <input type="text" placeholder="https:// yoursite.com">
+              </div>
+
+              <div class="input-area">
+                <span><i class="fa-regular fa-envelope"></i></span>
+                <input type="text" placeholder="youremail@domain.com">
+              </div>
+              <div class="btn-area">
+                <a href="#" class="header-btn1">Analyze Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+              </div>
+            </form>
+          </div>
+          <ul>
+            <li>Try:</li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Laptop</a></li>
+            <li><a href="#">iPhone</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== CTA AREA ENDS =======-->
+
+
+    <!-- analysis-area-start -->
+    <!--<section class="analysis-area sp1">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-8 m-auto">
+                 <div class="analysis-inner-section text-center heading2">
+                     <h5>Website Analysis</h5>
+                    <h2>Conduct Website Audience Analysis <br class="d-lg-block d-none"> And Explore Its Geography</h2>
+                 </div>
+              </div>
+           </div>
+           <div class="row">
+              <div class="col-lg-10 m-auto">
+                 <div class="services-seo">
+                    <div class="services-seo-scroll">
+                       <div class="services-seo-head">
+                          <div class="row">
+                             <div class="col-xl-4 col-lg-5 col-5">
+                                <div class="services-seo-heading">
+                                   <h4 class="services-seo-heading-title">
+                                      <input id="remeber" type="checkbox">
+                                      <label for="remeber">Blanking</label>
+                                   </h4>
+                                </div>
+                             </div>
+                             <div class="col-xl-8 col-lg-7 col-7">
+                                <div class="services-seo-catagory">
+                                   <div class="row">
+                                      <div class="col-lg-3 col-3">
+                                         <div class="services-seo-heading-item services-seo-catagory-one">
+                                            <span>Score</span>
+                                         </div>
+                                      </div>
+                                      <div class="col-lg-3 col-3">
+                                         <div class="services-seo-heading-item services-seo-catagory-two">
+                                            <span>Keyword</span>
+                                         </div>
+                                      </div>
+                                      <div class="col-lg-3 col-3">
+                                         <div class="services-seo-heading-item services-seo-catagory-three">
+                                            <span>Domain</span>
+                                         </div>
+                                      </div>
+                                      <div class="col-lg-3 col-3">
+                                         <div class="services-seo-heading-item services-seo-catagory-four">
+                                            <div class="rank">
+                                               <span>Rank
+                                                  <i class="fa-light fa-angle-up"></i>
+                                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                     <path
+                                                        d="M6.33239 1.14917H5.14742C2.18498 1.14917 1 2.33415 1 5.29659V8.85152C1 11.814 2.18498 12.9989 5.14742 12.9989H8.70235C11.6648 12.9989 12.8498 11.814 12.8498 8.85152V7.66654"
+                                                        stroke="white" stroke-opacity="0.7" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                     <path
+                                                        d="M9.31928 1.75319L4.65047 6.42199C4.47273 6.59974 4.29498 6.94931 4.25943 7.20408L4.00466 8.98747C3.90986 9.63328 4.36608 10.0836 5.01189 9.9947L6.79528 9.73993C7.04412 9.70438 7.39369 9.52663 7.57736 9.34889L12.2462 4.68008C13.052 3.8743 13.4311 2.93816 12.2462 1.75319C11.0612 0.568212 10.1251 0.947404 9.31928 1.75319Z"
+                                                        stroke="white" stroke-opacity="0.7" stroke-width="1.5"
+                                                        stroke-miterlimit="10" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                     <path
+                                                        d="M8.64844 2.42236C9.0454 3.83841 10.1534 4.94636 11.5753 5.34925"
+                                                        stroke="white" stroke-opacity="0.7" stroke-width="1.5"
+                                                        stroke-miterlimit="10" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                  </svg>
+                                               </span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="services-seo-info">
+                          <div class="services-seo-item">
+                             <div class="row align-items-center">
+                                <div class="col-xl-4 col-lg-5 col-5">
+                                   <div class="services-seo-link d-flex">
+                                      <div class="services-seo-link-check">
+                                         <input id="seo-link-check" type="checkbox">
+                                         <label for="seo-link-check">WOG PRIDE on the app store</label>
+                                         <span><a href="#">https://www.daraz.com/gameing-laptops/</a></span>
+                                      </div>
+                                   </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-7 col-7">
+                                   <div class="services-seo-catagory">
+                                      <div class="row">
+                                         <div class="col-lg-3 col-3">
+                                            <div class="services-seo-catagory-item services-seo-catagory-one">
+                                               <span>86</span>
+                                            </div>
+                                         </div>
+                                         <div class="col-lg-3 col-3">
+                                            <div class="services-seo-catagory-item services-seo-catagory-two">
+                                               <span>Laptop</span>
+                                            </div>
+                                         </div>
+                                         <div class="col-lg-3 col-3">
+                                            <div class="services-seo-catagory-item services-seo-catagory-three">
+                                               <span><a href="#">daraz.com</a></span>
+                                            </div>
+                                         </div>
+                                         <div class="col-lg-3 col-3">
+                                            <div
+                                               class="services-seo-catagory-item services-seo-catagory-four d-flex align-items-center">
+                                               <div class="stable-rank"><span>4</span></div>
+                                               <div class="incridable-rank">
+                                                <i class="fa-solid fa-angle-up"></i>
+                                                  <span>1</span>
+                                               </div>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="services-seo-item">
+                             <div class="row align-items-center">
+                                <div class="col-xl-4 col-lg-5 col-5">
+                                   <div class="services-seo-link d-flex">
+                                      <div class="services-seo-link-check">
+                                         <input id="seo-link-check-2" type="checkbox">
+                                         <label for="seo-link-check-2">SEO PRIDE on the app store</label>
+                                         <span><a href="#">https://www.daraz.com/gameing-laptops/</a></span>
+                                      </div>
+                                   </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-7 col-7">
+                                   <div class="services-seo-catagory">
+                                      <div class="row">
+                                         <div class="col-lg-3 col-3">
+                                            <div class="services-seo-catagory-item services-seo-catagory-one">
+                                               <span>105</span>
+                                            </div>
+                                         </div>
+                                         <div class="col-lg-3 col-3">
+                                            <div class="services-seo-catagory-item services-seo-catagory-two">
+                                               <span>Laptop</span>
+                                            </div>
+                                         </div>
+                                         <div class="col-lg-3 col-3">
+                                            <div class="services-seo-catagory-item services-seo-catagory-three">
+                                               <span><a href="#">daraz.com</a></span>
+                                            </div>
+                                         </div>
+                                         <div class="col-lg-3 col-3">
+                                            <div
+                                               class="services-seo-catagory-item services-seo-catagory-four d-flex align-items-center">
+                                               <div class="stable-rank"><span>0</span></div>
+                                               <div class="incridable-rank">
+                                                
+                                               </div>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="services-seo-item">
+                             <div class="row align-items-center">
+                                <div class="col-xl-4 col-lg-5 col-5">
+                                   <div class="services-seo-link d-flex">
+                                      <div class="services-seo-link-check">
+                                         <input id="seo-link-check-3" type="checkbox">
+                                         <label for="seo-link-check-3">PRIDE on the app store</label>
+                                         <span><a href="#">https://www.daraz.com/gameing-laptops/</a></span>
+                                      </div>
+                                   </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-7 col-7">
+                                   <div class="services-seo-catagory">
+                                      <div class="row">
+                                         <div class="col-lg-3 col-3">
+                                            <div class="services-seo-catagory-item services-seo-catagory-one">
+                                               <span>42</span>
+                                            </div>
+                                         </div>
+                                         <div class="col-lg-3 col-3">
+                                            <div class="services-seo-catagory-item services-seo-catagory-two">
+                                               <span>Laptop</span>
+                                            </div>
+                                         </div>
+                                         <div class="col-lg-3 col-3">
+                                            <div class="services-seo-catagory-item services-seo-catagory-three">
+                                               <span><a href="#">daraz.com</a></span>
+                                            </div>
+                                         </div>
+                                         <div class="col-lg-3 col-3">
+                                            <div
+                                               class="services-seo-catagory-item services-seo-catagory-four d-flex align-items-center">
+                                               <div class="stable-rank"><span>3</span></div>
+                                               <div class="incridable-rank incridable-rank-y">
+                                                <i class="fa-solid fa-angle-up"></i>
+                                                  <span>2</span>
+                                               </div>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="services-seo-item">
+                             <div class="row align-items-center">
+                                <div class="col-xl-4 col-lg-5 col-5">
+                                   <div class="services-seo-link d-flex">
+                                      <div class="services-seo-link-check">
+                                         <input id="seo-link-check-4" type="checkbox">
+                                         <label for="seo-link-check-4">WOG on the Online store</label>
+                                         <span><a href="#">https://www.daraz.com/gameing-laptops/</a></span>
+                                      </div>
+                                   </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-7 col-7">
+                                   <div class="services-seo-catagory">
+                                      <div class="row">
+                                         <div class="col-lg-3 col-3">
+                                            <div class="services-seo-catagory-item services-seo-catagory-one">
+                                               <span>06</span>
+                                            </div>
+                                         </div>
+                                         <div class="col-lg-3 col-3">
+                                            <div class="services-seo-catagory-item services-seo-catagory-two">
+                                               <span>Laptop</span>
+                                            </div>
+                                         </div>
+                                         <div class="col-lg-3 col-3">
+                                            <div class="services-seo-catagory-item services-seo-catagory-three">
+                                               <span><a href="#">daraz.com</a></span>
+                                            </div>
+                                         </div>
+                                         <div class="col-lg-3 col-3">
+                                            <div
+                                               class="services-seo-catagory-item services-seo-catagory-four d-flex align-items-center">
+                                               <div class="stable-rank"><span>5</span></div>
+                                               <div class="incridable-rank">
+                                                <i class="fa-solid fa-angle-up"></i>
+                                                  <span>1</span>
+                                               </div>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+     <!-- analysis-area-end -->
+    <!--===== CHOOSE AREA STARTS =======-->
+    <!--<div class="choose-section-area sp1">
+    <img src="assets/img/bg/cta-bg1.png" alt="" class="cta-bg1 aniamtion-key-2">
+    <img src="assets/img/bg/cta-bg2.png" alt="" class="cta-bg2 aniamtion-key-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 m-auto">
+                <div class="choose-header-area text-center heading2">
+                    <h5>Why Choose Us</h5>
+                    <h2>Why Choose SEOC For Graphic designing?</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="accordian-tabs-area">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              1. Customized Strategies
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">We believe in transparency and provide regular updates and detailed reports on your campaign's progress.</div>
+                            <div class="space10"></div>
+                            <div class="accordion-body body2">Ready to boost your online presence and drive more organic traffic to your website.</div>
+                          </div>
+                        </div>
+                        <div class="space24"></div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              2.Transparent Reporting
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">We believe in transparency and provide regular updates and detailed reports on your campaign's progress.</div>
+                            <div class="space10"></div>
+                            <div class="accordion-body body2">Ready to boost your online presence and drive more organic traffic to your website.</div>
+                          </div>
+                        </div>
+                        <div class="space24"></div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              3.Proven Results
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">We believe in transparency and provide regular updates and detailed reports on your campaign's progress.</div>
+                            <div class="space10"></div>
+                            <div class="accordion-body body2">Ready to boost your online presence and drive more organic traffic to your website.</div>
+                          </div>
+                        </div>
+                        <div class="space24"></div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                4.Expert Team
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">We believe in transparency and provide regular updates and detailed reports on your campaign's progress.</div>
+                                <div class="space10"></div>
+                                <div class="accordion-body body2">Ready to boost your online presence and drive more organic traffic to your website.</div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-all-images-area">
+                    <img src="assets/img/elements/elements14.png" alt="" class="elements12 keyframe5">
+                    <img src="assets/img/elements/elements15.png" alt="" class="elements13 keyframe5">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <div class="img1">
+                            <div class="space100"></div>
+                          <img src="assets/img/all-images/service-img5.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <div class="img2">
+                          <img src="assets/img/all-images/service-img9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--===== CHOOSE AREA ENDS =======-->
+
+    <!--===== TEAM AREA STARTS =======-->
+    <!--div class="team-inner-section-area sp1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 m-auto">
+          <div class="team2-header-area text-center heading2">
+            <h5>Our Team</h5>
+            <h2>Meet With Our Expert Team</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="team-boxarea">
+            <div class="img1">
+              <img src="assets/img/all-images/team-img1.png" alt="">
+            </div>
+            <ul>
+              <li><a href="#"><img src="assets/img/icons/facebook.svg" alt=""></a></li>
+              <li><a href="#"><img src="assets/img/icons/instagram.svg" alt=""></a></li>
+              <li><a href="#"><img src="assets/img/icons/linkedin.svg" alt=""></a></li>
+              <li><a href="#" class="m-0"><img src="assets/img/icons/youtube.svg" alt=""></a></li>
+            </ul>
+            <div class="content">
+              <a href="team.html">John Doe</a>
+              <p>CEO & Founder</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6">
+          <div class="team-boxarea">
+            <div class="img1">
+              <img src="assets/img/all-images/team-img2.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#"><img src="assets/img/icons/facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="assets/img/icons/instagram.svg" alt=""></a></li>
+                <li><a href="#"><img src="assets/img/icons/linkedin.svg" alt=""></a></li>
+                <li><a href="#" class="m-0"><img src="assets/img/icons/youtube.svg" alt=""></a></li>
+            </ul>
+            <div class="content">
+              <a href="team.html">Jane Smith</a>
+              <p>Digital Marketing Officer</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6">
+          <div class="team-boxarea">
+            <div class="img1">
+              <img src="assets/img/all-images/team-img3.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#"><img src="assets/img/icons/facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="assets/img/icons/instagram.svg" alt=""></a></li>
+                <li><a href="#"><img src="assets/img/icons/linkedin.svg" alt=""></a></li>
+                <li><a href="#" class="m-0"><img src="assets/img/icons/youtube.svg" alt=""></a></li>
+            </ul>
+            <div class="content">
+              <a href="team.html">Sarah Thompson </a>
+              <p>Web Designer</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6">
+          <div class="team-boxarea m-0">
+            <div class="img1">
+              <img src="assets/img/all-images/team-img4.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#"><img src="assets/img/icons/facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="assets/img/icons/instagram.svg" alt=""></a></li>
+                <li><a href="#"><img src="assets/img/icons/linkedin.svg" alt=""></a></li>
+                <li><a href="#" class="m-0"><img src="assets/img/icons/youtube.svg" alt=""></a></li>
+            </ul>
+            <div class="content">
+              <a href="team.html">David Garcia</a>
+              <p>Content Writer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--===== TEAM AREA ENDS =======-->
+
+    <!--===== BLOG AREA STARTS =======-->
+    <!--div class="blog1-scetion-area sp1 bg2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 m-auto">
+          <div class="blog-hedaer-area heading2 text-center">
+            <h5>Our Blog</h5>
+            <h2>Our Latest Blog & News</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-author-boxarea">
+            <div class="img1">
+              <img src="assets/img/all-images/blog-img1.png" alt="">
+            </div>
+            <div class="content-area">
+              <div class="tags-area">
+                <ul>
+                 <li><a href="#"><img src="assets/img/icons/contact1.svg" alt="">Ben Stokes</a></li>
+                  <li><a href="#"><img src="assets/img/icons/calender1.svg" alt="">16 August 2023</a></li>
+                </ul>
+              </div>
+              <a href="blog-single.html">10 Essential SEO Tips to Boost Your Website's Ranking</a>
+              <p>Are you looking to improve your website's visibility and attract more organic traffic? </p>
+              <a href="blog-single.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="space30 d-lg-none d-block"></div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-author-boxarea">
+            <div class="img1">
+              <img src="assets/img/all-images/blog-img2.png" alt="">
+            </div>
+            <div class="content-area">
+              <div class="tags-area">
+                <ul>
+                 <li><a href="#"><img src="assets/img/icons/contact1.svg" alt="">Ben Stokes</a></li>
+                  <li><a href="#"><img src="assets/img/icons/calender1.svg" alt="">16 August 2023</a></li>
+                </ul>
+              </div>
+              <a href="blog-single.html">The Power of PPC Advertising: How to Maximize Your ROI</a>
+              <p>Unlock the full potential of your digital marketing strategy with the power of PPC.</p>
+              <a href="blog-single.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="space30 d-lg-none d-block"></div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-author-boxarea">
+            <div class="img1">
+              <img src="assets/img/all-images/blog-img3.png" alt="">
+            </div>
+            <div class="content-area">
+              <div class="tags-area">
+                <ul>
+                 <li><a href="#"><img src="assets/img/icons/contact1.svg" alt="">Ben Stokes</a></li>
+                  <li><a href="#"><img src="assets/img/icons/calender1.svg" alt="">16 August 2023</a></li>
+                </ul>
+              </div>
+              <a href="blog-single.html">The Importance of Responsive Web Design in the Mobile Age</a>
+              <p>Where mobile devices dominate internet usage, responsive web design more crucial.</p>
+              <a href="blog-single.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--===== BLOG AREA ENDS =======-->
+
+    <!--===== CTA AREA STARTS =======-->
+    <!--div class="cta-section-area">
+  <img src="assets/img/bg/cta-bg1.png" alt="" class="cta-bg1 aniamtion-key-2">
+          <img src="assets/img/bg/cta-bg2.png" alt="" class="cta-bg2 aniamtion-key-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 m-auto">  
+        <div class="cta-header-area text-center sp4 heading2">
+          <h2>Ready To Take Your SEO To <br class="d-md-block d-none"> The Next Level</h2>
+          <p>Effective SEO strategies not only elevate a website's visibility but also drive <br class="d-md-block d-none"> targeted traffic, enhance user experience,</p>
+          <div class="btn-area text-center">
+            <a href="contact.html" class="header-btn1">Free Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===== CTA AREA ENDS =======-->
 
     <!--===== FOOTER AREA STARTS =======-->
     <!-- Meta Pixel Code -->
