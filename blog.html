@@ -22,7 +22,7 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services</title>
+    <title>Blogs</title>
 
     <!--=====FAB ICON=======-->
     <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
@@ -439,25 +439,266 @@
     <!--===== BLOG AREA ENDS =======-->
 
 
-    <!--===== CTA AREA STARTS =======-->
+
+
     <div class="cta-section-area">
-        <img src="assets/img/bg/cta-bg1.png" alt="" class="cta-bg1 aniamtion-key-2">
-        <img src="assets/img/bg/cta-bg2.png" alt="" class="cta-bg2 aniamtion-key-1">
         <div class="container">
+            <div class="community-posts-title">
+                <div class="decorative-dots dots-left"></div>
+                <div class="decorative-dots dots-right"></div>
+                <h2>Join Our Community</h2>
+                <p>Connect with us across platforms and be part of the conversation</p>
+            </div>
+
             <div class="row">
-                <div class="col-lg-12 m-auto">
-                    <div class="cta-header-area text-center sp4 heading2">
-                        <h2>Ready To Take Your SEO To <br class="d-md-block d-none"> The Next Level</h2>
-                        <p>Effective SEO strategies not only elevate a website's visibility but also drive <br class="d-md-block d-none"> targeted traffic, enhance user experience,</p>
-                        <div class="btn-area text-center">
-                            <a href="contact.html" class="header-btn1">Free Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="community-card">
+                        <!-- <div class="img-wrapper">
+                            <img src="assets/img/all-images/medium-post.png" alt="Medium Post">
+                        </div> -->
+                        <div class="community-content">
+                            <span class="platform-badge medium-badge">
+                                <i class="fab fa-medium"></i> Medium
+                            </span>
+                            <h3 class="community-title">Empowering Businesses with Cutting-Edge Technology</h3>
+                            <p class="community-description">Dive deep into our insights on digital transformation, emerging technologies, and strategies for business growth in the digital age.</p>
+                            <a href="https://medium.com/@teamtecmetaverse/empowering-businesses-with-cutting-edge-technology-digital-growth-c40a81ee6ddb" target="_blank" class="community-link">
+                                Read on Medium <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="community-card">
+
+                        <div class="community-content">
+                            <span class="platform-badge reddit-badge">
+                                <i class="fab fa-reddit-alien"></i> Reddit
+                            </span>
+                            <h3 class="community-title">Join Our Tech Community on Reddit</h3>
+                            <p class="community-description">Engage in discussions, share your thoughts, and stay updated with the latest trends in technology and digital innovation.</p>
+                            <a href="https://www.reddit.com/user/TECMETAVERSE/submitted/?sort=hot" target="_blank" class="community-link">
+                                Join Discussion <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--===== CTA AREA ENDS =======-->
+
+    <style>
+        .community-content {
+            padding: 10px;
+        }
+        
+        .community-posts-title {
+            text-align: center;
+            padding: 10px 0 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .community-posts-title::before {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(45deg, white, white);
+            border-radius: 50%;
+            top: -75px;
+            left: -75px;
+            z-index: 0;
+        }
+        
+        .platform-badge {
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .community-posts-title h2 {
+            font-family: var(--ztc-family-font1);
+            font-size: 2rem;
+            font-weight: var(--ztc-weight-medium);
+            color: white;
+            border-radius: 8px;
+            transition: all 0.4s;
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .community-posts-title h2::before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background: linear-gradient(to right, #007bff, #00bfff);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        
+        .community-posts-title p {
+            font-size: 1rem;
+            color: white;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+            animation: subtitleFadeIn 0.8s ease forwards;
+            animation-delay: 0.2s;
+            opacity: 0;
+        }
+        
+        @keyframes titleFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes subtitleFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Media Queries for Responsiveness */
+        
+        @media (max-width: 768px) {
+            .community-posts-title h2 {
+                font-size: 2.5rem;
+            }
+            .community-posts-title p {
+                font-size: 1.1rem;
+                padding: 0 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .community-posts-title h2 {
+                font-size: 2rem;
+            }
+            .community-posts-title p {
+                font-size: 1rem;
+            }
+        }
+        /* Add subtle text shadow on hover */
+        
+        .community-posts-title h2:hover {
+            text-shadow: 2px 2px 4px white;
+            transition: text-shadow 0.3s ease;
+        }
+        /* Optional: Add decorative elements */
+        
+        .community-posts-title .decorative-dots {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-image: radial-gradient(circle, #007bff 2px, transparent 2px);
+            background-size: 12px 12px;
+            opacity: 0.2;
+        }
+        
+        .community-posts-title .dots-left {
+            top: 20px;
+            left: 20px;
+            transform: rotate(-15deg);
+        }
+        
+        .community-posts-title .dots-right {
+            bottom: 20px;
+            right: 20px;
+            transform: rotate(15deg);
+        }
+        
+        .medium-badge {
+            background: #E8F3FF;
+            color: #007bff;
+        }
+        
+        .reddit-badge {
+            background: #FFE8E8;
+            color: #ff4500;
+        }
+        
+        .community-title {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: white;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+        
+        .community-description {
+            color: white;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .community-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #007bff 0%, #00bfff 100%);
+            color: #fff;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .community-link:hover {
+            background: linear-gradient(135deg, #00bfff 0%, #007bff 100%);
+            transform: translateX(5px);
+            color: #fff;
+        }
+        
+        .community-link i {
+            margin-left: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .community-link:hover i {
+            transform: translateX(5px);
+        }
+        /* Animation for cards */
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .community-card {
+            padding: 15px;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+    </style>
+
+
+
 
 
     <!--===== FOOTER AREA STARTS =======-->
