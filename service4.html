@@ -108,9 +108,28 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="service-images">
-                        <img src="assets/img/all-images/service-img18.png" alt="">
+                        <style>
+                            @media only screen and (max-width: 768px) {
+                                .mobile-hide {
+                                    display: none !important;
+                                }
+                            }
+                        </style>
+                        <img src="assets/img/all-images/services/email_marketing.png" alt="" class="mobile-hide" style="height: 80%; width: 80%;">
                     </div>
                 </div>
+                <style>
+                    @media (max-width: 768px) { 
+                    .col-lg-6 {
+                        display: flex;
+                        flex-direction: column;
+                        /* justify-content: center;  */
+                        align-items: center; /* Centers content horizontally */
+                        text-align: center; /* Centers text content */
+                    }
+  
+                }
+                </style>
                 <div class="col-lg-6">
                     <div class="service-textarea heading2">
                         <h5>Email Marketing</h5>
@@ -125,6 +144,212 @@
                     </div>
                 </div>
             </div>
+             <!-- **************Card View for Email Marketing Services**************** -->
+        <!-- Styling Start -->
+        <style>
+            .cards-container {
+              display: flex;
+              justify-content: center;
+              gap: 20px;
+              padding: 50px;
+              flex-wrap: wrap;
+              max-width: 1500px;
+              margin: 0 auto;
+            }
+        
+            .card {
+              flex: 1;
+              min-width: 280px;
+              max-width: 500px;
+              /* Set fixed height for all cards */
+              height: 350px;
+              background: #fff;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+              overflow: hidden;
+              text-align: center;
+              padding: 20px;
+              position: relative;
+              transition: all 0.3s ease-in-out;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin: 10px;
+              isolation: isolate;
+            }
+        
+            .card:hover {
+              height: auto;
+              min-height: 300px;
+              transform: translateY(-10px);
+              background: rgba(249, 234, 255, 1);
+              border-color: rgba(121, 80, 255, 1);
+            }
+        
+            .image-container {
+              width: 140px;
+              height: 140px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 20px;
+              transition: all 0.3s ease-in-out;
+            }
+        
+            .card:hover .image-container {
+              width: 120px;
+              height: 120px;
+            }
+        
+            .image-container img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 10px;
+              transition: transform 0.3s ease-in-out;
+            }
+        
+            .content {
+              flex: 1;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center; /* Center all content horizontally */
+            }
+        
+            h3 {
+              margin: 0;
+              font-size: 1.5rem;
+              color: rgba(121, 80, 255, 1);
+            }
+        
+            .subtitle {
+              margin: 10px 0;
+              color: #666;
+              font-weight: 600;
+            }
+        
+            .extra-info {
+              max-height: 0;
+              opacity: 0;
+              transition: all 0.3s ease-in-out;
+              overflow: hidden;
+              margin: 0;
+              font-size: 0.9rem;
+              color: #555;
+              font-weight: 500;
+              position: absolute;
+              width: calc(100% - 40px);
+              text-align:center; /* Center the text */
+            }
+        
+            .card:hover .extra-info {
+              position: relative;
+              max-height: 200px;
+              opacity: 1;
+              margin-top: 15px;
+            }
+        
+            /* Mobile Responsiveness */
+            @media screen and (max-width: 768px) {
+              .cards-container {
+                padding: 10px;
+                gap: 15px;
+              }
+        
+              .card {
+                min-width: 100%;
+                margin: 5px 0;
+                padding: 15px;
+                height: 280px;
+              }
+        
+              .card:hover {
+                min-height: 280px;
+              }
+        
+              .image-container {
+                width: 140px;
+                height: 140px;
+                margin-bottom: 15px;
+              }
+        
+              h3 {
+                font-size: 1.3rem;
+              }
+        
+              .subtitle {
+                font-size: 0.95rem;
+              }
+        
+              .extra-info {
+                font-size: 0.85rem;
+              }
+            }
+        
+            /* Small Mobile Devices */
+            @media screen and (max-width: 480px) {
+              .image-container {
+                width: 120px;
+                height: 120px;
+              }
+        
+              .card:hover .image-container {
+                width: 100px;
+                height: 100px;
+              }
+        
+              h3 {
+                font-size: 1.2rem;
+              }
+            }
+          </style>
+          <!-- Styling End -->
+          <!-- Email Marketing Features Start -->
+          <div class="cards-container">
+            <!-- Card1-Email List Building -->
+            <div class="card">
+              <div class="image-container">
+                <img src="assets/img/all-images/services/email_list.png" alt="Email List Icon">
+              </div>
+              <div class="content">
+                <h3>Email List Building</h3>
+                <p class="subtitle">Grow Your Subscriber Base</p>
+                <p class="extra-info">
+                    We help you build a high-quality email list of engaged subscribers. This includes strategies like lead magnet creation, landing page optimization, and targeted advertising to attract and convert website visitors into subscribers.
+                </p>
+              </div>
+            </div>
+        
+            <!-- Card2-Email Campaign Creation & Management -->
+            <div class="card">
+              <div class="image-container">
+                <img src="assets/img/all-images/services/email_management.png" alt="Email Campaign Creation & Management Icon">
+              </div>
+              <div class="content">
+                <h3>Email Campaign Creation & Management</h3>
+                <p class="subtitle">Craft Compelling Email Campaigns</p>
+                <p class="extra-info">
+                    We design and execute effective email campaigns that deliver your message to the right audience. This includes crafting engaging email copy, designing visually appealing templates, and segmenting your audience for targeted messaging.
+                </p>
+              </div>
+            </div>
+        
+            <!-- Card3-Email Marketing Automation -->
+            <div class="card">
+              <div class="image-container">
+                <img src="assets/img/all-images/services/email_automation.png" alt="Email Marketing Automation Icon">
+              </div>
+              <div class="content">
+                <h3>Email Marketing Automation</h3>
+                <p class="subtitle">Streamline & Optimize Your Email Marketing</p>
+                <p class="extra-info">
+                    We implement automated email workflows to nurture leads, trigger timely messages, and personalize the customer journey. This includes setting up automated welcome sequences, abandoned cart reminders, and personalized recommendations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Email Marketing Features End -->
         </div>
     </div>
 
