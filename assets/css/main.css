@@ -55,13 +55,8 @@ textarea {
 }
 
 img {
-<<<<<<< HEAD
   /* max-width: 100%; */
   max-height: 100%;
-=======
-    max-width: 100%;
-    max-height: 100%;
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 }
 
 .reveal {
@@ -809,17 +804,10 @@ Location:
 }
 
 @media (max-width: 767px) {
-<<<<<<< HEAD
   .heading2 h2 {
     font-size: var(--ztc-font-size-font-s26);
     line-height: var(--ztc-font-size-font-s40);
   }
-=======
-    .heading2 h2 {
-        font-size: var(--ztc-font-size-font-s32);
-        line-height: var(--ztc-font-size-font-s40);
-    }
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 }
 
 .heading2 p {
@@ -3237,14 +3225,9 @@ Location:
 /*============= ABOUT CSS AREA ===============*/
 
 .about1-section-area {
-<<<<<<< HEAD
   position: relative;
   z-index: 1;
   
-=======
-    position: relative;
-    z-index: 1;
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 }
 
 .about1-section-area .about-images {
@@ -3252,19 +3235,11 @@ Location:
 }
 
 .about1-section-area .about-images img {
-<<<<<<< HEAD
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
    border-radius: 60px 
-=======
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    border-radius: 100px 100px 100px 100px;
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 }
 
 .about1-section-area .about-images .star1 {
@@ -3277,14 +3252,9 @@ Location:
 }
 
 .about1-section-area .about-content-area {
-<<<<<<< HEAD
   position: relative;
 
   padding: 0 50px;
-=======
-    position: relative;
-    padding: 0 50px;
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 }
 
 .about1-section-area .about-content-area .arrow-circle {
@@ -3335,18 +3305,10 @@ Location:
         top: 0;
     }
 }
-<<<<<<< HEAD
 @media (max-width: 768px) {
   .about1-section-area .about-auhtor-images {
     display: none;
   }
-=======
-
-@media (max-width: 767px) {
-    .about1-section-area .about-auhtor-images {
-        top: 0;
-    }
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 }
 
 .about1-section-area .about-auhtor-images img {
@@ -4681,126 +4643,7 @@ Location:
     background: #F9FAFB;
 }
 
-<<<<<<< HEAD
-/*============= ABOUT CSS AREA ENDS ===============*/
-/*============= SERVICE CSS AREA ===============*/
-.service1-section-area .service-header-area {
-  margin-bottom: 60px;
-  position: relative;
-  z-index: 1;
-}
-@media (max-width: 767px) {
-  .service1-section-area .service-header-area {
-    margin-bottom: 30px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .service1-section-area .service-header-area {
-    margin-bottom: 30px;
-  }
-}
-.service1-section-area .service-all-boxes-area {
-  display: flex;
-  justify-content: center; /* Ensures even alignment */
-  align-items: stretch; /* Makes all blocks the same height */
-  gap: 50px;
-}
-.service1-section-area .service-all-boxes-area :hover{
-  transform: scale(1.05);
-        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2)
-}
-@media (max-width: 767px) {
-  .service1-section-area .service-all-boxes-area {
-    display: inline-block;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .service1-section-area .service-all-boxes-area {
-    display: inline-block;
-  }
-}
-.service1-section-area .service-all-boxes-area .service-boxarea {
-  text-align: center;
-  background: var(--ztc-bg-bg-5);
-  position: relative;
-  padding: 50px 20px;
-  border-radius: 8px 0 0 8px;
-}
-.service1-section-area .service-all-boxes-area .service-boxarea:hover img {
-  transform: rotateY(-180deg);
-  transition: all 0.4s;
-}
-.service1-section-area .service-all-boxes-area .service-boxarea img {
-  transition: all 0.4s;
-}
-.service1-section-area .service-all-boxes-area .service-boxarea a {
-  font-family: var(--ztc-family-font1);
-  font-size: var(--ztc-font-size-font-s20);
-  line-height: var(--ztc-font-size-font-s30);
-  font-weight: var(--ztc-weight-semibold);
-  color: var(--ztc-text-text-2);
-  display: inline-block;     
-  transition: all 0.4s;
-}
-.service1-section-area .service-all-boxes-area .service-boxarea p {
-  font-family: var(--ztc-family-font1);
-  font-size: var(--ztc-font-size-font-s16);
-  line-height: var(--ztc-font-size-font-s24);
-  font-weight: var(--ztc-weight-regular);
-  color: var(--ztc-text-text-2);
-  transition: all 0.4s;
-}
-.service1-section-area .service-all-boxes-area .service-boxarea.box2 {
-  background: var(--ztc-bg-bg-6);
-  border-radius: 0;
-}
-.service1-section-area .service-all-boxes-area .service-boxarea.box3 {
-  background: var(--ztc-bg-bg-7);
-  border-radius: 0;
-}
-.service1-section-area .service-all-boxes-area .service-boxarea.box4 {
-  background: var(--ztc-bg-bg-8);
-  border-radius: 0 8px 8px 0;
-}
-.service1-section-area .service-all-boxes-area1 {
-  display: flex;
-}
-@media (max-width: 767px) {
-  .service1-section-area .service-all-boxes-area1 {
-    display: inline-block;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .service1-section-area .service-all-boxes-area1 {
-    display: inline-block;
-  }
-}
-.service1-section-area .service-all-boxes-area1 .service-boxarea {
-  text-align: center;
-  background: #DDD2F3; 
-  /* background: lightsteelblue; */
-  position: relative;
-  padding: 50px 20px;
-  border-radius: 8px;
-  max-height: 440px;
-  margin-bottom: 30px;
-}
-.service1-section-area .service-all-boxes-area1 .service-boxarea19 {
-  text-align: center;
-  /* background: #DDD2F3; */
-  background: lightsteelblue;
-  position: relative;
-  padding: 50px 20px;
-  border-radius: 8px;
-  max-height: 440px;
-  margin-bottom: 30px;
-}
-@media (max-width: 767px) {
-  .service1-section-area .service-all-boxes-area1 .service-boxarea {
-    width: 100%;
-=======
 .about15-section-area .img1 img {
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
@@ -4896,7 +4739,10 @@ Location:
     /* Makes all blocks the same height */
     gap: 50px;
 }
-
+.service1-section-area .service-all-boxes-area :hover{
+  transform: scale(1.05);
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2)
+}
 @media (max-width: 767px) {
     .service1-section-area .service-all-boxes-area {
         display: inline-block;
@@ -5072,24 +4918,14 @@ Location:
 }
 
 .service2-section-area .images-content-area {
-<<<<<<< HEAD
   position: relative;
   z-index: 1;
   
-=======
-    position: relative;
-    z-index: 1;
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 }
 
 .service2-section-area .images-content-area:hover .img1 img {
-<<<<<<< HEAD
   /* transform: scale(1.2) rotate(-4deg);
   transition: all 0.8s; */
-=======
-    transform: scale(1.2) rotate(-4deg);
-    transition: all 0.8s;
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 }
 
 .service2-section-area .images-content-area:hover .arrow-area {
@@ -5098,37 +4934,21 @@ Location:
 }
 
 .service2-section-area .images-content-area .img1 {
-<<<<<<< HEAD
   /* border-radius: 8px;
   transition: all 0.4s;
   overflow: hidden; */
   
-=======
-    border-radius: 8px;
-    transition: all 0.4s;
-    overflow: hidden;
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 }
 
 .service2-section-area .images-content-area .img1 img {
-<<<<<<< HEAD
   height: auto;
   /* width: 1100px !important; */
   
   /* border-radius: 8px;
   transition: all 0.8s; */
-=======
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: all 0.8s;
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 }
 
 .service2-section-area .images-content-area .content-area {
-<<<<<<< HEAD
   
   padding: 24px;
   margin-top: 100px;
@@ -5137,17 +4957,9 @@ Location:
   line-height: 1.5rem;
   width:84em;
   
-=======
-    padding: 24px;
-    padding: 24px;
-    margin-top: -300px;
-    position: relative;
-    z-index: 1;
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 }
 
 @media (max-width: 767px) {
-<<<<<<< HEAD
   .service2-section-area .images-content-area .content-area {
     margin-top: 30px;
     padding: -200px;
@@ -5170,12 +4982,6 @@ Location:
       display: block;  /* Ensure proper display */
       margin: 0 auto;  /* Center the image */
   }
-=======
-    .service2-section-area .images-content-area .content-area {
-        margin-top: 30px;
-        padding: 0;
-    }
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 }
 
 .service2-section-area .images-content-area .content-area h5 {
@@ -11281,16 +11087,10 @@ Location:
 }
 
 .blog1-scetion-area .blog-hedaer-area {
-<<<<<<< HEAD
   margin-top: 20px;
   margin-bottom: 60px;
   position: relative;
   z-index: 1;
-=======
-    margin-bottom: 60px;
-    position: relative;
-    z-index: 1;
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 }
 
 @media (max-width: 767px) {
@@ -24786,18 +24586,11 @@ html {
 }
 
 .star3 {
-<<<<<<< HEAD
   position: absolute;
   left: 0;
 
   bottom: -23;
   z-index: -1;
-=======
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 }
 
 
@@ -26148,15 +25941,11 @@ html {
     object-fit: cover;
     border-radius: 100px;
 }
-<<<<<<< HEAD
 @media screen and (max-width: 768px) {
   .history-inner-section-area .about-all-images-area .img1 img {
       display: none !important;
   }
 }
-=======
-
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 .history-inner-section-area .history-content-area {
     padding: 0 0 0 50px;
 }
@@ -28588,18 +28377,10 @@ html {
     transform: scale(1.1) rotate(4deg);
     transition: all 0.4s;
 }
-<<<<<<< HEAD
-.contact1-section-area .contact-info-area {
-  background: var(--ztc-text-text-2);
-  border-radius: 8px;
-  padding: 52px 40px;
-  position: relative;
-=======
 
 .team14-section-area .our-team-boxarea:hover .content {
     background: #4D44C5;
     transition: all 0.4s;
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 }
 
 .team14-section-area .our-team-boxarea:hover .content a {
@@ -28740,10 +28521,10 @@ html {
 }
 
 .contact1-section-area .contact-info-area {
-    background: var(--ztc-text-text-2);
-    border-radius: 8px;
-    padding: 40px 40px;
-    position: relative;
+  background: var(--ztc-text-text-2);
+  border-radius: 8px;
+  padding: 52px 40px;
+  position: relative;
 }
 
 .contact1-section-area .contact-info-area h3 {
@@ -34849,19 +34630,10 @@ html {
     background: #F9FAFB;
 }
 
-<<<<<<< HEAD
-/*============= TESTIMONIAL CSS AREA ENDS ===============*/
-/*============= CASE STUDY CSS AREA ENDS ===============*/
-.case1-section-area {
-  position: relative;
-  z-index: 1;
-  margin-top: 25px;
-=======
 .testimonial15-section-area .testimonial-slider-boxarea {
     position: relative;
     z-index: 1;
     background-color: #fff;
->>>>>>> 13ee24d17c889f06abf9fcd9bb08f2c1c919eab6
 }
 
 .testimonial15-section-area .testimonial-slider-boxarea .preloader13 {
@@ -35025,8 +34797,9 @@ html {
 /*============= CASE STUDY CSS AREA ENDS ===============*/
 
 .case1-section-area {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
+  margin-top: 25px;
 }
 
 .case1-section-area .case-header-area {
