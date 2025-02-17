@@ -3,18 +3,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="header-elements">
+                    <div class="header-elements d-flex align-items-center justify-content-between">
                         <div class="site-logo">
                             <a href="index.html"><img src="assets/img/logo/logop1.png" alt="Logo"></a>
                         </div>
-                        <div class="main-menu">
-                            <ul>
-                                <li style="padding-left: 200px;"><a href="index.html">Home</a></li>
-
-
-                                <li><a href="about.html">About Us</a></li>
+                        <div class="main-menu flex-grow-1">
+                            <ul class="d-flex align-items-center justify-content-center">
+                                <li><a href="index.html" class="nowrap">Home</a></li>
+                                <li><a href="about.html" class="nowrap">About Us</a></li>
                                 <li>
-                                    <a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+                                    <a href="#" class="nowrap">Services <i class="fa-solid fa-angle-down"></i></a>
                                     <ul class="dropdown-padding">
                                         <li><a href="service1.html">Our Services</a></li>
                                         <li><a href="service2.html">Web Design & Development</a></li>
@@ -30,13 +28,13 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="plans.html">Our Plans</a></li>
-                                <li><a href="blog.html">Blogs</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="plans.html" class="nowrap">Our Plans</a></li>
+                                <li><a href="blog.html" class="nowrap">Blogs</a></li>
+                                <li><a href="portfolio.html" class="nowrap">Portfolio</a></li>
                             </ul>
                         </div>
                         <div class="btn-area">
-                            <a href="contact.html" class="header-btn1">Contact Us<span><i class="fa-solid fa-arrow-right"></i></span></a>
+                            <a href="contact.html" class="header-btn1">Get Started<span><i class="fa-solid fa-arrow-right"></i></span></a>
                         </div>
                         <div class="header-search-form-wrapper">
                             <div class="tx-search-close tx-close"><i class="fa-solid fa-xmark"></i></div>
@@ -54,3 +52,9 @@
         </div>
     </div>
 </header>
+
+<style>
+    .main-menu .nowrap {
+        white-space: nowrap;
+    }
+</style>
