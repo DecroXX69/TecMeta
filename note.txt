@@ -1,1 +1,4 @@
 npm install -g html-minifier
+
+
+html-minifier --input-dir ./  --output-dir ./minified-html   --collapse-whitespace --remove-comments --minify-css true --minify-js true   --preserve-line-breaks --keep-closing-slash

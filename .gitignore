@@ -4,13 +4,13 @@
 /node_modules
 /.pnp
 .pnp.js
-
+/minified-assets
 # testing
 /coverage
-
+package-lock.json
 # production
 /build
-
+/minified-html
 # misc
 .DS_Store
 .env.local
