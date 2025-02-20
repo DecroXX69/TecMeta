@@ -1,0 +1,258 @@
+changed code for our plans and purchase
+
+<div class="service1-section-area sp2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="service-all-boxes-area1">
+              <div class="row">
+                <!-- Branding & Promotion -->
+                <a
+                  href="digitalplan.html"
+                  style="text-decoration: none; color: inherit"
+                  class="col-lg-3 col-md-6"
+                >
+                  <div style="cursor: pointer">
+                    <div class="service-boxarea19">
+                      <!-- <a href="digitalplan.html">Branding & Promotion</a> -->
+                      <h4><b>Digital Marketing Plan</b></h4>
+                      <div class="space40"></div>
+                      <img src="assets/img/icons/service-icon4.svg" alt="" />
+                      <div class="space40"></div>
+                      <p>
+                        At TecMetaverse, we craft digital marketing solutions and 
+                        branding strategies to amplify business and drive success.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <!-- Web Design & Development -->
+                <a
+                  href="websiteplan.html"
+                  style="text-decoration: none; color: inherit"
+                  class="col-lg-3 col-md-6"
+                >
+                  <div style="cursor: pointer">
+                    <div class="service-boxarea19">
+                      <h4><b>Web Design & Development Plan</b></h4>
+                      <div class="space40"></div>
+                      <img src="assets/img/icons/service-icon2.svg" alt="" />
+                      <div class="space40"></div>
+                      <p>
+                        At TecMetaverse, we create tailored web design and
+                        development solutions to meet your business needs.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+
+                <!-- Blockchain Development -->
+                <a
+                  href="websiteplan.html"
+                  style="text-decoration: none; color: inherit"
+                  class="col-lg-3 col-md-6"
+                >
+                  <div style="cursor: pointer">
+                    <div class="service-boxarea19">
+                      <h4><b>Blockchain Development Plan</b></h4>
+                      <div class="space40"></div>
+                      <img src="assets/img/icons/service-icon2.svg" alt="" />
+                      <div class="space40"></div>
+                      <p>
+                        At TecMetaverse, we create tailored web design and
+                        development solutions to meet your business needs.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+
+                <!-- Graphic Designing -->
+                <a
+                  href="graphicdesignplan.html"
+                  style="text-decoration: none; color: inherit"
+                  class="col-lg-3 col-md-6"
+                >
+                  <div style="cursor: pointer">
+                    <div class="service-boxarea19">
+                      <h4><b>Graphic Designing Plan</b></h4>
+                      <div class="space40"></div>
+                      <img src="assets/img/icons/service-icon16.svg" alt="" />
+                      <div class="space40"></div>
+                      <p>
+                        <br />At TecMetaverse, we craft stunning and impactful
+                        graphic designs for your brand.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+
+                <!-- Search Engine Optimization -->
+                <a
+                  href="seoplan.html"
+                  style="text-decoration: none; color: inherit"
+                  class="col-lg-3 col-md-6"
+                >
+                  <div style="cursor: pointer">
+                    <div class="service-boxarea19">
+                      <h4><b>Search Engine Optimization Plan</b></h4>
+                      <div class="space40"></div>
+                      <img src="assets/img/icons/service-icon15.svg" alt="" />
+                      <div class="space66"></div>
+                      <br/>
+                      <p>
+                        At TecMetaverse, our SEO services enhance your 
+                        website's visibility and attract your target audience.
+                        
+                        <br />
+                      </p>
+                    </div>
+                  </div>
+                </a>
+
+                <!-- Social Media Marketing -->
+                <a
+                  href="socialmediaplan.html"
+                  style="text-decoration: none; color: inherit"
+                  class="col-lg-3 col-md-6"
+                >
+                  <div style="cursor: pointer">
+                    <div class="service-boxarea19">
+                      <h4><b>Social Media Marketing Plan</b></h4>
+                      <div class="space40"></div>
+                      <img src="assets/img/icons/service-icon1.svg" alt="" />
+                      <div class="space40"></div>
+                      <p>
+                        At TecMetaverse, we craft digital marketing solutions and 
+                        impactful branding strategies designed to amplify your business.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+
+                <!-- Email Marketing -->
+                <a
+                  href="emailmarketing.html"
+                  style="text-decoration: none; color: inherit"
+                  class="col-lg-3 col-md-6"
+                >
+                  <div style="cursor: pointer">
+                    <div class="service-boxarea19">
+                      <h4><b>Email Marketing Plan</b></h4>
+                      <div class="space40"></div>
+                      <img src="assets/img/icons/service-icon18.svg" alt="" />
+                      <div class="space40"></div>
+                      <br/>
+                      <p>
+                        At TecMetaverse, we enhance your website's visibility and
+                        attract your target audience with SEO services.
+                      </p>
+                      <br/>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+
+      .service1-section-area {
+        padding: 80px 0;
+        background: linear-gradient(135deg, #e3f2fd, #ffffff);
+      }
+
+      .service-all-boxes-area1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .service-boxarea19 {
+        background: #ffffff;
+        padding: 70px 20px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s ease-in-out;
+        position: relative;
+        overflow: hidden;
+        border: 2px solid transparent;
+      }
+
+      .service-boxarea19:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        border-color: #007bff;
+      }
+
+      .service-boxarea19::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 100%;
+        height: 100%;
+        padding: 93px 20px;
+        background: radial-gradient(
+          circle,
+          rgba(0, 123, 255, 0.1),
+          transparent
+        );
+        transition: all 0.4s ease-in-out;
+        z-index: 0;
+      }
+
+      .service-boxarea19:hover::before {
+        top: 0;
+        left: 0;
+      }
+
+      .service-boxarea19 h4 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 15px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .service-boxarea19 img {
+        width: 70px;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+        position: relative;
+        z-index: 1;
+      }
+
+      .service-boxarea19:hover img {
+        transform: scale(1.1);
+      }
+
+      .service-boxarea19 p {
+        font-size: 15px;
+        color: #555;
+        margin-top: 10px;
+        line-height: 1.6;
+        position: relative;
+        z-index: 1;
+      }
+
+      .space40,
+      .space66 {
+        height: 20px;
+      }
+
+      @media (max-width: 992px) {
+        .col-lg-3 {
+          width: 50%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .col-lg-3 {
+          width: 100%;
+        }
+      }</style>
