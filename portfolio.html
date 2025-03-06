@@ -11,7 +11,7 @@
   <!-- End Google Tag Manager -->        
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blockchain Development</title>
+    <title>Portfolio</title>
 
     <!--=====FAB ICON=======-->
     <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
@@ -42,7 +42,7 @@
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="assets/img/logo/preloader.png" alt=""></div>
+            <div id="loading-icon"><img src="assets/img/logo/preloader.png"  loading="lazy" alt=""></div>
         </div>
     </div>
     <!--===== PRELOADER ENDS =======-->
@@ -76,8 +76,8 @@
 
     <!--===== HERO AREA STARTS =======-->
     <div class="about-header-area" style="background-image: url(assets/img/bg/inner-header.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        <img src="assets/img/elements/elements1.png" alt="" class="elements1 aniamtion-key-1">
-        <img src="assets/img/elements/star2.png" alt="" class="star2 keyframe5">
+        <img src="assets/img/elements/elements1.png"  loading="lazy" alt="" class="elements1 aniamtion-key-1">
+        <img src="assets/img/elements/star2.png" loading="lazy"  alt="" class="star2 keyframe5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 m-auto">
@@ -95,7 +95,20 @@
     <div class="service-inner-header sp8" style="margin-bottom: 2em;">
         <div class="container">
             <div class="row align-items-center">
-               
+                <div class="col-lg-6">
+                    <div class="service-images">
+                      <!-- Hide Image in Mobile View Start -->
+                      <style>
+                        @media only screen and (max-width: 768px) {
+                            .mobile-hide {
+                                display: none !important;
+                            }
+                        }
+                    </style>
+                    <!-- Hide Image in Mobile View End -->
+                      <img src="assets/img/all-images/services/portfolio3.png"  loading="lazy" alt="" class="mobile-hide" style="display: block; height: 85%; width: 85%;">
+                    </div>
+                </div>
                 <div class="col-lg-6">
                     <div class="service-textarea heading2">
                         <h5>Featured Projects</h5>
@@ -110,20 +123,7 @@
                     <!-- View Our Services Button End -->
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="service-images">
-                  <!-- Hide Image in Mobile View Start -->
-                  <style>
-                    @media only screen and (max-width: 768px) {
-                        .mobile-hide {
-                            display: none !important;
-                        }
-                    }
-                </style>
-                <!-- Hide Image in Mobile View End -->
-                  <img src="assets/img/all-images/services/Portfolio2.png" alt="" class="mobile-hide" style="padding-right: 25px; display: block;">
-                </div>
-            </div>
+           
         </div>
         <!-- **************Card View for Featured Projects**************** -->
         <!-- Styling Start -->
@@ -162,6 +162,8 @@
               padding: 30px;
               cursor: pointer;
               align-items: center;
+              max-height: auto;
+              min-height: 275px;
           }
 
           .image-container {
@@ -175,8 +177,8 @@
           }
 
           .image-container img {
-              width: 100%;
-              height: 100%;
+              width: 75%;
+              height: 75%;
               object-fit: cover;
           }
 
@@ -205,7 +207,7 @@
 
           .tag {
               padding: 6px 16px;
-              background-color: rgba(255, 255, 255, 0.2);
+              background-color: rgba(255, 255, 255, 0.15);
               border-radius: 20px;
               font-size: 16px;
           }
@@ -277,12 +279,13 @@
               background-color: #4128AD;
               color: white;
               border-radius: 20px;
-              font-size: 14px;
+              font-size: 16px;
           }
 
           /* Responsive Design */
 
           @media (max-width: 768px) {
+            
               .cards-container {
                   flex-direction: column;
                   align-items: center;
@@ -299,6 +302,7 @@
                   flex-direction: column;
                   align-items: center;
                   text-align: center;
+                  max-height: 400px;
               }
               .header-content {
                 margin-left: 0px;
@@ -342,15 +346,18 @@
           <div class="project-card">
             <div class="card-header">
                 <div class="image-container">
-                    <img src="assets/img/all-images/services/gbtrade_mockup.png" alt="GB Trade">
+                    <img src="assets/img/all-images/services/market360_mockup.png"  loading="lazy" alt="Market360" >
                 </div>
                 <div class="header-content">
                     <h1 class="project-title">Market 360</h1>
                     <p class="project-subtitle">Transforming Deal Discovery & Affiliate Marketing</p>
                     <div class="tag-container">
-                        <span class="tag">Full-Scale Development</span>
+                        <span class="tag">Frontend Development</span>
                         <span class="tag">Seamless UI/UX</span>
                         <span class="tag">Performance Optimization</span>
+                        <span class="tag">Logo Design</span>
+                        <span class="tag">Web Hosting & Server Configuration</span>
+                        <span class="tag">Security Configuration</span>
                     </div>
                 </div>
             </div>
@@ -374,94 +381,96 @@
                     <h2 class="section-title">Technology Stack</h2>
                     <div class="tech-stack">
                         <span class="tech-tag">React.js</span>
-                        <span class="tech-tag">Tailwind CSS</span>
                         <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">Express.js</span>
                         <span class="tech-tag">MongoDB</span>
                         <span class="tech-tag">JWT</span>
-                        <span class="tech-tag">AWS S3</span>
-                        
+                        <span class="tech-tag">AWS Lightsail</span>
+                        <span class="tech-tag">DNS Management</span>
+                        <span class="tech-tag">SSL</span>
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Adobe Illustrator</span>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Card-2 -->
-        <!-- <div class="project-card">
+        <div class="project-card">
+            <div class="card-header">
+                <div class="image-container">
+                    <img src="assets/img/all-images/services/iluminati_mockup3.png" loading="lazy"  alt="Illuminati" >
+                </div>
+                <div class="header-content">
+                    <h1 class="project-title">Illuminati Sky Lounge</h1>
+                    <p class="project-subtitle">Luxury Nightlife & Event Venue</p>
+                    <div class="tag-container">
+                        <span class="tag">Frontend Development</span>
+                        <span class="tag">Landing Page</span>
+                        <span class="tag">Logo Design</span>
+                        <span class="tag">Web Hosting & Infrastructure</span>
+                        <span class="tag">Server & Deployment</span>
+                        <span class="tag">Domain & DNS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="section">
+                    <h2 class="section-title">Project Overview</h2>
+                    <p>A premium nightlife venue offering an unparalleled blend of sophistication and modern elegance. Illuminati Sky Lounge provides the perfect setting for unforgettable events and an exclusive nightlife experience. A visually stunning website showcasing the venue's unique ambiance and exclusive offerings.</p>
+                </div>
+        
+                <div class="section">
+                    <h2 class="section-title">Key Features</h2>
+                    <div class="feature-grid">
+                        <div class="feature-item">📸 Immersive Visuals</div>
+                        <div class="feature-item">✨ Compelling Hero Section</div>
+                        <div class="feature-item">💫 Smooth Scrolling & Animations</div>
+                        <div class="feature-item">📱 Responsive Design</div>
+                        <div class="feature-item">🕹️ Interactive Elements</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2 class="section-title">Technology Stack</h2>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Adobe Illustrator</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">Hosting</span>
+                        <span class="tech-tag">Security</span>
+                        <span class="tech-tag">SSL</span>
+                        <span class="tech-tag">Domain & DNS</span>
+                        <span class="tech-tag">Server & Deployment</span>
+                    </div>
+                </div>
+            </div>
+            </div>   
+    <!-- Card-3 -->
+    <!-- <div class="project-card">
         <div class="card-header">
             <div class="image-container">
-                <img src="assets/img/all-images/services/decentralized.png" alt="GB Trade">
+                <img src="assets/img/all-images/services/gbtrade_mockup2.png" alt="GB Trade">
             </div>
             <div class="header-content">
                 <h1 class="project-title">GB Trade</h1>
-                <p class="project-subtitle">Revolutionizing Global Blockchain Trading</p>
+                <p class="project-subtitle">Transforming Forex Trading & Building Financial Freedom</p>
                 <div class="tag-container">
-                    <span class="tag">Blockchain Development</span>
-                    <span class="tag">Trading Platform</span>
-                    <span class="tag">Global Trade</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-body">
-            <div class="section">
-                <h2 class="section-title">Project Overview</h2>
-                <p>GB Trade is a cutting-edge blockchain-powered trading platform designed to simplify and secure global trade transactions. Our team has developed this innovative solution to ensure seamless, transparent, and efficient trading experiences for businesses worldwide.</p>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Key Features</h2>
-                <div class="feature-grid">
-                    <div class="feature-item">🔗 Decentralized Trading Ecosystem</div>
-                    <div class="feature-item">📝 Smart Contracts Integration</div>
-                    <div class="feature-item">📊 Real-time Trade Analytics</div>
-                    <div class="feature-item">💼 Secure Digital Wallets</div>
-                    <div class="feature-item">⚡ Scalability & Performance</div>
-                </div>
-            </div>
-
-
-            <div class="section">
-                <h2 class="section-title">Technology Stack</h2>
-                <div class="tech-stack">
-                    <span class="tech-tag">Ethereum</span>
-                    <span class="tech-tag">Hyperledger</span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">React.js</span>
-                    <span class="tech-tag">Angular</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">MongoDB</span>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Card-3 -->
-    <div class="project-card">
-    <div class="card-header">
-        <div class="image-container">
-            <img src="assets/img/all-images/services/gbtrade_mockup.png" alt="GB Trade">
-        </div>
-        <div class="header-content">
-            <h1 class="project-title">GB Trade</h1>
-            <p class="project-subtitle">Revolutionizing Global Blockchain Trading</p>
-            <div class="tag-container">
-                <span class="tag">Blockchain Development</span>
-                <span class="tag">Trading Platform</span>
                 <span class="tag">Global Trade</span>
+                <span class="tag">PAMM</span>
+                <span class="tag">Portfolio Diversification</span>
+                <span class="tag">Web Hosting & Infrastructure</span>
+                <span class="tag">Server & Deployment</span>
+                <span class="tag">Domain & DNS</span>
             </div>
         </div>
-    </div>
+        </div>
     <div class="card-body">
         <div class="section">
             <h2 class="section-title">Project Overview</h2>
-            <p>GB Trade is a cutting-edge blockchain-powered trading platform designed to simplify and secure global trade transactions. Our team has developed this innovative solution to ensure seamless, transparent, and efficient trading experiences for businesses worldwide.</p>
+            <p>A sophisticated platform empowering individuals to participate in Forex trading, cultivate financial growth, and cultivate strategic business partnerships.</p>
         </div>
-
         <div class="section">
             <h2 class="section-title">Key Features</h2>
             <div class="feature-grid">
-                <div class="feature-item">🔗 Decentralized Trading Ecosystem</div>
-                <div class="feature-item">📝 Smart Contracts Integration</div>
                 <div class="feature-item">📊 Real-time Trade Analytics</div>
                 <div class="feature-item">💼 Secure Digital Wallets</div>
                 <div class="feature-item">⚡ Scalability & Performance</div>
@@ -470,20 +479,69 @@
         <div class="section">
             <h2 class="section-title">Technology Stack</h2>
             <div class="tech-stack">
-                <span class="tech-tag">Ethereum</span>
-                <span class="tech-tag">Hyperledger</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">Python</span>
                 <span class="tech-tag">React.js</span>
-                <span class="tech-tag">Angular</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">AJAX</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">Hosting</span>
+                <span class="tech-tag">Security</span>
+                <span class="tech-tag">SSL</span>
+                <span class="tech-tag">Domain & DNS</span>
+                <span class="tech-tag">Server & Deployment</span>
             </div>
         </div>
     </div>
-</div>
+    </div> -->
+    <!-- Card-4 -->
+    <div class="project-card">
+        <div class="card-header">
+            <div class="image-container">
+                <img src="assets/img/all-images/services/knightsfin_mockup.png"  loading="lazy" alt="Knights Fin">
+            </div>
+            <div class="header-content">
+                <h1 class="project-title">Knights Fin</h1>
+                <p class="project-subtitle">Helping Buyers Find Their Dream Properties with Ease</p>
+                <div class="tag-container">
+                <span class="tag">Real Estate</span>
+                <span class="tag">Property Listing</span>
+                <span class="tag">Fullstack Development</span>
+                <span class="tag">Web Hosting & Infrastructure</span>
+                <span class="tag">Server & Deployment</span>
+                <span class="tag">Domain & DNS</span>
+            </div>
         </div>
-        
+        </div>
+    <div class="card-body">
+        <div class="section">
+            <h2 class="section-title">Project Overview</h2>
+            <p>A comprehensive real estate platform designed to simplify property searches, provide market insights, and streamline the purchase process. The platform enables users to explore listings, compare properties, and access expert guidance for informed decision-making.</p>
+        </div>
+        <div class="section">
+            <h2 class="section-title">Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">🏡 Smart Property Search</div>
+                <div class="feature-item">📊 Real-time Trade Analytics</div>
+                <div class="feature-item">🔗 Seamless Buyer-Agent Interaction</div>
+                <div class="feature-item">⚡ Scalability & Performance</div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-title">Technology Stack</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">Hosting</span>
+                <span class="tech-tag">Security</span>
+                <span class="tech-tag">SSL</span>
+                <span class="tech-tag">Domain & DNS</span>
+                <span class="tech-tag">Server & Deployment</span>
+            </div>
+        </div>
+    </div>
+    </div>
         <!-- Featured Projects End -->
         </div>
     </div>

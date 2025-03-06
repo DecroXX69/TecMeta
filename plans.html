@@ -1,72 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-M3SQZP8D');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-M3SQZP8D");
     </script>
     <!-- End Google Tag Manager -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Plans & Purchase</title>
 
     <!--=====FAB ICON=======-->
-    <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo/fav-logo1.png"
+      type="image/x-icon"
+    />
 
     <!--===== CSS LINK =======-->
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/aos.css">
-    <link rel="stylesheet" href="assets/css/plugins/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/plugins/mobile.css">
-    <link rel="stylesheet" href="assets/css/plugins/owlcarousel.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/sidebar.css">
-    <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
-    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-
-
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/aos.css" />
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/plugins/mobile.css" />
+    <link rel="stylesheet" href="assets/css/plugins/owlcarousel.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/sidebar.css" />
+    <link rel="stylesheet" href="assets/css/plugins/slick-slider.css" />
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 
     <!--=====  JS SCRIPT LINK =======-->
     <script src="assets/js/plugins/jquery-3-6-0.min.js"></script>
-</head>
+  </head>
 
-<body class="homepage1-body">
+  <body class="homepage1-body">
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3SQZP8D"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M3SQZP8D"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!--===== PRELOADER STARTS =======-->
     <div class="preloader">
-        <div class="loading-container">
-            <div class="loading"></div>
-            <div id="loading-icon"><img src="assets/img/logo/preloader.png" alt=""></div>
+      <div class="loading-container">
+        <div class="loading"></div>
+        <div id="loading-icon">
+          <img src="assets/img/logo/preloader.png"  loading="lazy" alt="" />
         </div>
+      </div>
     </div>
     <!--===== PRELOADER ENDS =======-->
 
     <!--===== PROGRESS STARTS=======-->
     <div class="paginacontainer">
-        <div class="progress-wrap">
-            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-       </svg>
-        </div>
+      <div class="progress-wrap">
+        <svg
+          class="progress-circle svg-content"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+        >
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </div>
     </div>
     <!--===== PROGRESS ENDS=======-->
 
@@ -78,175 +91,259 @@
     <!--===== MOBILE HEADER STARTS =======-->
     <div id="mobile-header"></div>
     <script>
-        fetch("mobileheader.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("mobile-header").innerHTML = data;
-            })
-            .catch(error => console.error("Error loading the mobile header:", error));
+      fetch("mobileheader.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("mobile-header").innerHTML = data;
+        })
+        .catch((error) =>
+          console.error("Error loading the mobile header:", error)
+        );
     </script>
     <!--===== MOBILE HEADER ENDS =======-->
 
     <!--===== HERO AREA STARTS =======-->
-    <div class="about-header-area" style="background-image: url(assets/img/bg/inner-header.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        <img src="assets/img/elements/elements1.png" alt="" class="elements1 aniamtion-key-1">
-        <img src="assets/img/elements/star2.png" alt="" class="star2 keyframe5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 m-auto">
-                    <div class="about-inner-header heading9 text-center">
-                        <h1>Our Plans & Purchase</h1>
-                        <a href="index.html">Home <i class="fa-solid fa-angle-right"></i> <span>Plans & Purchase</span></a>
-                    </div>
-                </div>
+    <div
+      class="about-header-area"
+      style="
+        background-image: url(assets/img/bg/inner-header.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      ">
+      <img
+        src="assets/img/elements/elements1.png"
+        alt=""
+        class="elements1 aniamtion-key-1"
+      />
+      <img src="assets/img/elements/star2.png"  loading="lazy" alt="" class="star2 keyframe5" />
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 m-auto">
+            <div class="about-inner-header heading9 text-center">
+              <h1>Our Plans</h1>
+              <a href="index.html"
+                >Home <i class="fa-solid fa-angle-right"></i>
+                <span>Plans</span></a>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!--===== HERO AREA ENDS =======-->
 
-
-
     <!--===== WORK AREA STARTS =======-->
-
-
-    <div class="service1-section-area sp2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="service-all-boxes-area1">
-                        <div class="row">
-                            <!-- Branding & Promotion -->
-                            <a href="digitalplan.html" style="text-decoration: none; color: inherit;" class="col-lg-3 col-md-6">
-                                <div style="cursor: pointer;">
-                                    <div class="service-boxarea19">
-                                        <!-- <a href="digitalplan.html">Branding & Promotion</a> -->
-                                        <h4><b>Digital Marketing Plan</b></h4>
-                                        <div class="space40"></div>
-                                        <img src="assets/img/icons/service-icon4.svg" alt="">
-                                        <div class="space40"></div>
-                                        <p>At TecMetaverse, we craft innovative digital marketing solutions and impactful branding strategies designed to amplify your business and drive success.</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- Web Design & Development -->
-                            <a href="websiteplan.html" style="text-decoration: none; color: inherit;" class="col-lg-3 col-md-6">
-                                <div style="cursor: pointer;">
-                                    <div class="service-boxarea19">
-                                        <h4><b>Web Design & Development Plan</b></h4>
-                                        <div class="space66"></div>
-                                        <img src="assets/img/icons/service-icon2.svg" alt="">
-                                        <div class="space40"></div>
-                                        <p>At TecMetaverse, we create tailored web design and development solutions to meet your business needs.</p>
-                                    </div>
-                                </div>
-                            </a>
-
-
-                            <!-- Mobile App Development -->
-                            <a href="websiteplan.html" style="text-decoration: none; color: inherit;" class="col-lg-3 col-md-6">
-                                <div style="cursor: pointer;">
-                                    <div class="service-boxarea19">
-                                        <h4><b>Mobile App Development Plan</b></h4>
-                                        <div class="space66"></div>
-                                        <img src="assets/img/icons/service-icon3.svg" alt="">
-                                        <div class="space40"></div>
-                                        <p>At TecMetaverse, we build custom, high-performance mobile apps for your business.</p>
-                                    </div>
-                                </div>
-                            </a>
-
-
-
-                            <!-- Graphic Designing -->
-                            <a href="websiteplan.html" style="text-decoration: none; color: inherit;" class="col-lg-3 col-md-6">
-                                <div style="cursor: pointer;">
-                                    <div class="service-boxarea19">
-                                        <h4><b>Graphic Designing Plan</b></h4>
-                                        <div class="space40"></div>
-                                        <img src="assets/img/icons/service-icon16.svg" alt="">
-                                        <div class="space40"></div><br>
-                                        <p><br>At TecMetaverse, we craft stunning and impactful graphic designs for your brand.</p>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <!-- Search Engine Optimization -->
-                            <a href="websiteplan.html" style="text-decoration: none; color: inherit;" class="col-lg-3 col-md-6">
-                                <div style="cursor: pointer;">
-                                    <div class="service-boxarea19">
-                                        <h4><b>Search Engine Optimization Plan</b></h4>
-                                        <div class="space40"></div>
-                                        <img src="assets/img/icons/service-icon15.svg" alt="">
-                                        <div class="space40"></div><br>
-                                        <p>At TecMetaverse, our SEO services enhance your website's visibility and attract your target audience.</p>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <!-- Pay Per Click -->
-                            <a href="websiteplan.html" style="text-decoration: none; color: inherit;" class="col-lg-3 col-md-6">
-                                <div style="cursor: pointer;">
-                                    <div class="service-boxarea19">
-                                        <h4><b>Pay Per Click Plan</b></h4>
-                                        <div class="space40"></div>
-                                        <img src="assets/img/icons/service-icon17.svg" alt="">
-                                        <div class="space40"></div><br><br>
-                                        <p>At TecMetaverse, our PPC services deliver instant connections with your target audience through precise ads.</p>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <!-- Social Media Marketing -->
-                            <a href="websiteplan.html" style="text-decoration: none; color: inherit;" class="col-lg-3 col-md-6">
-                                <div style="cursor: pointer;">
-                                    <div class="service-boxarea19">
-                                        <h4><b>Social Media Marketing Plan</b></h4>
-                                        <div class="space40"></div>
-                                        <img src="assets/img/icons/service-icon1.svg" alt="">
-                                        <div class="space40"></div>
-                                        <p>At TecMetaverse, we create social media campaigns to boost engagement, and grow your online presence.</p>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <!-- Email Marketing -->
-                            <a href="websiteplan.html" style="text-decoration: none; color: inherit;" class="col-lg-3 col-md-6">
-                                <div style="cursor: pointer;">
-                                    <div class="service-boxarea19">
-                                        <h4><b>Email Marketing Plan</b></h4>
-                                        <div class="space40"></div>
-                                        <img src="assets/img/icons/service-icon18.svg" alt="">
-                                        <div class="space40"></div><br>
-                                        <p>At TecMetaverse, we offer email marketing solutions to connect businesses directly with their customers.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+    <div style="padding: 80px 0; background: linear-gradient(135deg, #e3f2fd, #ffffff);" class="service1-section-area sp2">
+      <div style="width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 15px;" class="container">
+        <div style="display: flex; flex-wrap: wrap; margin: 0 -15px;" class="row">
+          <div style="width: 100%; padding: 0 15px;" class="col-lg-12">
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;" class="service-all-boxes-area1">
+              <div style="display: flex; flex-wrap: wrap; width: 100%;" class="row">
+                
+                <!-- Digital Marketing Plan -->
+                <a href="digitalplan.html" style="text-decoration: none; color: inherit; width: 100%; max-width: 25%; padding: 10px; box-sizing: border-box; flex: 0 0 25%; display: block; transition: all 0.3s ease-in-out; margin-bottom: 20px;">
+                  <div style="cursor: pointer; height: 100%;">
+                    <div style="background: #ffffff; padding: 40px 20px; text-align: center; border-radius: 8px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); transition: all 0.4s ease-in-out; position: relative; overflow: hidden; border: 2px solid transparent; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                      <h4 style="font-size: 20px; font-weight: bold; color: #007bff; margin-bottom: 15px; position: relative; z-index: 1;"><b>Digital Marketing Plan</b></h4>
+                      <div style="height: 20px;"></div>
+                      <img src="assets/img/icons/service-icon4.svg"  loading="lazy" alt="" style="width: 70px; height: auto; transition: transform 0.3s ease-in-out; position: relative; z-index: 1; margin: 0 auto;" />
+                      <div style="height: 20px;"></div>
+                      <p style="font-size: 15px; color: #555; margin-top: 10px; line-height: 1.6; position: relative; z-index: 1;">
+                        At TecMetaverse, we craft digital marketing solutions and branding strategies to amplify business and drive success.
+                      </p>
                     </div>
-                </div>
+                  </div>
+                </a>
+                
+                <!-- Web Design & Development -->
+                <a href="websiteplan.html" style="text-decoration: none; color: inherit; width: 100%; max-width: 25%; padding: 10px; box-sizing: border-box; flex: 0 0 25%; display: block; transition: all 0.3s ease-in-out; margin-bottom: 20px;">
+                  <div style="cursor: pointer; height: 100%;">
+                    <div style="background: #ffffff; padding: 40px 20px; text-align: center; border-radius: 8px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); transition: all 0.4s ease-in-out; position: relative; overflow: hidden; border: 2px solid transparent; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                      <h4 style="font-size: 20px; font-weight: bold; color: #007bff; margin-bottom: 15px; position: relative; z-index: 1;"><b>Web Design & Development Plan</b></h4>
+                      <div style="height: 20px;"></div>
+                      <img src="assets/img/icons/service-icon2.svg" loading="lazy"  alt="" style="width: 70px; height: auto; transition: transform 0.3s ease-in-out; position: relative; z-index: 1; margin: 0 auto;" />
+                      <div style="height: 20px;"></div>
+                      <p style="font-size: 15px; color: #555; margin-top: 10px; line-height: 1.6; position: relative; z-index: 1;">
+                        At TecMetaverse, we create tailored web design and development solutions to meet your business needs.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                        
+                <!-- Blockchain Development -->
+                <a href="websiteplan.html" style="text-decoration: none; color: inherit; width: 100%; max-width: 25%; padding: 10px; box-sizing: border-box; flex: 0 0 25%; display: block; transition: all 0.3s ease-in-out; margin-bottom: 20px;">
+                  <div style="cursor: pointer; height: 100%;">
+                    <div style="background: #ffffff; padding: 40px 20px; text-align: center; border-radius: 8px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); transition: all 0.4s ease-in-out; position: relative; overflow: hidden; border: 2px solid transparent; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                      <h4 style="font-size: 20px; font-weight: bold; color: #007bff; margin-bottom: 15px; position: relative; z-index: 1;"><b>Blockchain Development Plan</b></h4>
+                      <div style="height: 20px;"></div>
+                      <img src="assets/img/icons/service-icon2.svg"  loading="lazy" alt="" style="width: 70px; height: auto; transition: transform 0.3s ease-in-out; position: relative; z-index: 1; margin: 0 auto;" />
+                      <div style="height: 20px;"></div>
+                      <p style="font-size: 15px; color: #555; margin-top: 10px; line-height: 1.6; position: relative; z-index: 1;">
+                        At TecMetaverse, we create tailored web design and development solutions to meet your business needs.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+    
+                <!-- Graphic Designing -->
+                <a href="graphicdesignplan.html" style="text-decoration: none; color: inherit; width: 100%; max-width: 25%; padding: 10px; box-sizing: border-box; flex: 0 0 25%; display: block; transition: all 0.3s ease-in-out; margin-bottom: 20px;">
+                  <div style="cursor: pointer; height: 100%;">
+                    <div style="background: #ffffff; padding: 40px 20px; text-align: center; border-radius: 8px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); transition: all 0.4s ease-in-out; position: relative; overflow: hidden; border: 2px solid transparent; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                      <h4 style="font-size: 20px; font-weight: bold; color: #007bff; margin-bottom: 15px; position: relative; z-index: 1;"><b>Graphic Designing Plan</b></h4>
+                      <div style="height: 20px;"></div>
+                      <img src="assets/img/icons/service-icon16.svg"  loading="lazy" alt="" style="width: 70px; height: auto; transition: transform 0.3s ease-in-out; position: relative; z-index: 1; margin: 0 auto;" />
+                      <div style="height: 20px;"></div>
+                      <p style="font-size: 15px; color: #555; margin-top: 10px; line-height: 1.6; position: relative; z-index: 1;">
+                        <br />At TecMetaverse, we craft stunning and impactful graphic designs for your brand.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+    
+                <!-- Search Engine Optimization -->
+                <a href="seoplan.html" style="text-decoration: none; color: inherit; width: 100%; max-width: 25%; padding: 10px; box-sizing: border-box; flex: 0 0 25%; display: block; transition: all 0.3s ease-in-out; margin-bottom: 20px;">
+                  <div style="cursor: pointer; height: 100%;">
+                    <div style="background: #ffffff; padding: 40px 20px; text-align: center; border-radius: 8px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); transition: all 0.4s ease-in-out; position: relative; overflow: hidden; border: 2px solid transparent; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                      <h4 style="font-size: 20px; font-weight: bold; color: #007bff; margin-bottom: 15px; position: relative; z-index: 1;"><b>Search Engine Optimization Plan</b></h4>
+                      <div style="height: 20px;"></div>
+                      <img src="assets/img/icons/service-icon15.svg" loading="lazy"  alt="" style="width: 70px; height: auto; transition: transform 0.3s ease-in-out; position: relative; z-index: 1; margin: 0 auto;" />
+                      <div style="height: 20px;"></div>
+                      <br/>
+                      <p style="font-size: 15px; color: #555; margin-top: 10px; line-height: 1.6; position: relative; z-index: 1;">
+                        At TecMetaverse, our SEO services enhance your website's visibility and attract your target audience.
+                        <br />
+                      </p>
+                    </div>
+                  </div>
+                </a>
+    
+                <!-- Social Media Marketing -->
+                <a href="socialmediaplan.html" style="text-decoration: none; color: inherit; width: 100%; max-width: 25%; padding: 10px; box-sizing: border-box; flex: 0 0 25%; display: block; transition: all 0.3s ease-in-out; margin-bottom: 20px;">
+                  <div style="cursor: pointer; height: 100%;">
+                    <div style="background: #ffffff; padding: 40px 20px; text-align: center; border-radius: 8px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); transition: all 0.4s ease-in-out; position: relative; overflow: hidden; border: 2px solid transparent; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                      <h4 style="font-size: 20px; font-weight: bold; color: #007bff; margin-bottom: 15px; position: relative; z-index: 1;"><b>Social Media Marketing Plan</b></h4>
+                      <div style="height: 20px;"></div>
+                      <img src="assets/img/icons/service-icon1.svg"  loading="lazy" alt="" style="width: 70px; height: auto; transition: transform 0.3s ease-in-out; position: relative; z-index: 1; margin: 0 auto;" />
+                      <div style="height: 20px;"></div>
+                      <p style="font-size: 15px; color: #555; margin-top: 10px; line-height: 1.6; position: relative; z-index: 1;">
+                        At TecMetaverse, we craft digital marketing solutions and impactful branding strategies designed to amplify your business.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+    
+                <!-- Email Marketing -->
+                <a href="emailmarketing.html" style="text-decoration: none; color: inherit; width: 100%; max-width: 25%; padding: 10px; box-sizing: border-box; flex: 0 0 25%; display: block; transition: all 0.3s ease-in-out; margin-bottom: 20px;">
+                  <div style="cursor: pointer; height: 100%;">
+                    <div style="background: #ffffff; padding: 40px 20px; text-align: center; border-radius: 8px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); transition: all 0.4s ease-in-out; position: relative; overflow: hidden; border: 2px solid transparent; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                      <h4 style="font-size: 20px; font-weight: bold; color: #007bff; margin-bottom: 15px; position: relative; z-index: 1;"><b>Email Marketing Plan</b></h4>
+                      <div style="height: 20px;"></div>
+                      <img src="assets/img/icons/service-icon18.svg"  loading="lazy" alt="" style="width: 70px; height: auto; transition: transform 0.3s ease-in-out; position: relative; z-index: 1; margin: 0 auto;" />
+                      <div style="height: 20px;"></div>
+                      <br/>
+                      <p style="font-size: 15px; color: #555; margin-top: 10px; line-height: 1.6; position: relative; z-index: 1;">
+                        At TecMetaverse, we enhance your website's visibility and attract your target audience with SEO services.
+                      </p>
+                      <br/>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-
-
+    
+    <!-- Add these responsive style rules at the bottom -->
+    <style>
+      /* Hover effects that we can't do with inline styles */
+      a[href] > div > div:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        border-color: #007bff;
+      }
+      
+      a[href] > div > div:hover img {
+        transform: scale(1.1);
+      }
+      
+      /* Before pseudo-element that we can't do with inline styles */
+      a[href] > div > div::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(0, 123, 255, 0.1), transparent);
+        transition: all 0.4s ease-in-out;
+        z-index: 0;
+      }
+      
+      a[href] > div > div:hover::before {
+        top: 0;
+        left: 0;
+      }
+      
+      /* Responsive breakpoints */
+      @media (max-width: 1200px) {
+        a[href^="digital"], a[href^="website"], a[href^="graphic"], a[href^="seo"], a[href^="social"], a[href^="email"] {
+          max-width: 33.33% !important;
+          flex: 0 0 33.33% !important;
+        }
+      }
+      
+      @media (max-width: 992px) {
+        a[href^="digital"], a[href^="website"], a[href^="graphic"], a[href^="seo"], a[href^="social"], a[href^="email"] {
+          max-width: 50% !important;
+          flex: 0 0 50% !important;
+        }
+      }
+      
+      @media (max-width: 576px) {
+        a[href^="digital"], a[href^="website"], a[href^="graphic"], a[href^="seo"], a[href^="social"], a[href^="email"] {
+          max-width: 100% !important;
+          flex: 0 0 100% !important;
+        }
+      }
+    </style>
 
     <!--===== CTA AREA STARTS =======-->
     <div class="cta-section-area">
-        <img src="assets/img/bg/cta-bg1.png" alt="" class="cta-bg1 aniamtion-key-2">
-        <img src="assets/img/bg/cta-bg2.png" alt="" class="cta-bg2 aniamtion-key-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 m-auto">
-                    <div class="cta-header-area text-center sp4 heading2">
-                        <h2>Ready To Take Your SEO To <br class="d-md-block d-none"> The Next Level</h2>
-                        <p>Effective SEO strategies not only elevate a website's visibility but also drive <br class="d-md-block d-none"> targeted traffic, enhance user experience,</p>
-                        <div class="btn-area text-center">
-                            <a href="contact.html" class="header-btn1">Free Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
+      <img
+        src="assets/img/bg/cta-bg1.png"
+        alt=""
+        class="cta-bg1 aniamtion-key-2"
+      />
+      <img
+        src="assets/img/bg/cta-bg2.png"
+        alt=""
+        class="cta-bg2 aniamtion-key-1"
+      />
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 m-auto">
+            <div class="cta-header-area text-center sp4 heading2">
+              <h2>
+                Ready To Take Your SEO To <br class="d-md-block d-none" />
+                The Next Level
+              </h2>
+              <p>
+                Effective SEO strategies not only elevate a website's visibility
+                but also drive <br class="d-md-block d-none" />
+                targeted traffic, enhance user experience,
+              </p>
+              <div class="btn-area text-center">
+                <a href="contact.html" class="header-btn1"
+                  >Free Consultation
+                  <span><i class="fa-solid fa-arrow-right"></i></span
+                ></a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!--===== CTA AREA ENDS =======-->
 
@@ -274,8 +371,5 @@
     <script src="assets/js/plugins/circle-progress.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/script.js"></script>
-
-
-</body>
-
+  </body>
 </html>

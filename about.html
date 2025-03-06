@@ -2,13 +2,24 @@
 <html lang="en">
 
 <head>
-     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-M3SQZP8D');</script>
-    <!-- End Google Tag Manager -->        
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M3SQZP8D');
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecmetaverse</title>
@@ -33,22 +44,25 @@
 </head>
 
 <body class="homepage1-body">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8NRRWYH2B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8NRRWYH2B"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-K8NRRWYH2B');
-</script>
-  <!-- End Google Tag Manager (noscript) -->
-  
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-K8NRRWYH2B');
+    </script>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!--===== PRELOADER STARTS =======-->
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="assets/img/logo/preloader.png" alt=""></div>
+            <div id="loading-icon"><img src="assets/img/logo/preloader.png"  loading="lazy" alt=""></div>
         </div>
     </div>
     <!--===== PRELOADER ENDS =======-->
@@ -64,634 +78,27 @@
     <!--===== PROGRESS ENDS=======-->
 
     <!--=====HEADER START=======-->
-    <header>
-        <div class="header-area homepage1 header header-sticky d-none d-lg-block " id="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="header-elements">
-                            <div class="site-logo">
-                                <a href="index.html"><img src="assets/img/logo/logop1.png" alt=""></a>
-                            </div>
-                            <div class="main-menu">
-                                <ul>
-                                    <li><a href="index.html">Home <i class=""></i></a>
-                                        <!-- <div class="tp-submenu">
-                    <div class="row">
-                       <div class="col-lg-12">
-                        <div class="all-images-menu">
-                          <div class="images">
-                            <div class="homemenu-thumb">
-                              <div class="img1">
-                              <img src="assets/img/all-images/demo-img1.png" alt="">
-                              </div>
-                        
-                               <div class="homemenu-btn">
-                                  <a class="header-btn1" href="index.html" target="_blank">Multi Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                  <div class="space16"></div>
-                                  <a class="header-btn1" href="single-index1.html" target="_blank">One Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                               </div>
-                               <div class="homemenu-content">
-                                <a href="index1.html">SEO & Digital Marketing 01</a>
-                               </div>
-                            </div>
-                            <div class="space20"></div>
-                          </div>
+    <div id="header-container"></div>
 
-                          <div class="images">
-                            <div class="homemenu-thumb">
-                              <div class="img1">
-                              <img src="assets/img/all-images/demo-img2.png" alt="">
-                              </div>
-                               <div class="homemenu-btn">
-                                  <a class="header-btn1" href="index2.html" target="_blank"> Multi Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                  <div class="space16"></div>
-                                  <a class="header-btn1" href="single-index2.html" target="_blank"> One Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                               </div>
-                               <div class="homemenu-content">
-                                <a href="index2.html">SEO & Digital Marketing 02</a>
-                               </div>
-                            </div>
-                            <div class="space20"></div>
-                          </div>
-
-                          <div class="images">
-                            <div class="homemenu-thumb">
-                              <div class="img1">
-                              <img src="assets/img/all-images/comming-soon.png" alt="" class="commingsoon">
-                              </div>
-                              <div class="homemenu-btn">
-                                <a class="header-btn1" href="index3.html" target="_blank">Multi Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                <div class="space16"></div>
-                                <a class="header-btn1" href="single-index3.html" target="_blank"> One Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                             </div>
-                             <div class="homemenu-content">
-                              <a href="index3.html">SEO & Digital Marketing 03</a>
-                             </div>
-                            </div>
-                            <div class="space20"></div>
-                          </div>
-
-                          <div class="images">
-                            <div class="homemenu-thumb">
-                              <div class="img1">
-                              <img src="assets/img/all-images/demo-img3.png" alt="">
-                              </div>
-                               <div class="homemenu-btn">
-                                  <a class="header-btn1" href="index4.html" target="_blank">Multi Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                  <div class="space16"></div>
-                                  <a class="header-btn1" href="single-index4.html" target="_blank"> One Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                               </div>
-                               <div class="homemenu-content">
-                                <a href="index4.html">SEO & Digital Marketing 04</a>
-                               </div>
-                            </div>
-                            <div class="space20"></div>
-                          </div>
-
-                          <div class="images">
-                            <div class="homemenu-thumb" style="margin: 0;">
-                              <div class="img1">
-                              <img src="assets/img/all-images/demo-img4.png" alt="">
-                              </div>
-                               <div class="homemenu-btn">
-                                  <a class="header-btn1" href="index5.html" target="_blank">Multi Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                  <div class="space16"></div>
-                                  <a class="header-btn1" href="single-index5.html" target="_blank"> One Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                               </div>
-                               <div class="homemenu-content">
-                                <a href="index5.html">SEO & Digital Marketing 05</a>
-                               </div>
-                            </div>
-                            <div class="space20"></div>
-                          </div>
-                        </div>
-
-                        <div class="all-images-menu">
-                          <div class="images">
-                            <div class="homemenu-thumb">
-                              <div class="img1">
-                              <img src="assets/img/all-images/demo-img11.png" alt="">
-                              </div>
-                              <div class="text">
-                                <h2>NEW</h2>
-                              </div>
-                               <div class="homemenu-btn">
-                                  <a class="header-btn1" href="index11.html" target="_blank">Multi Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                  <div class="space16"></div>
-                                  <a class="header-btn1" href="single-index11.html" target="_blank">One Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                               </div>
-                               <div class="homemenu-content">
-                                <a href="index11.html">Staffing Agency</a>
-                               </div>
-                            </div>
-                            <div class="space20"></div>
-                          </div>
-
-                          <div class="images">
-                            <div class="homemenu-thumb">
-                              <div class="img1">
-                              <img src="assets/img/all-images/demo-img12.png" alt="">
-                              </div>
-                              <div class="text">
-                                <h2>NEW</h2>
-                              </div>
-                               <div class="homemenu-btn">
-                                  <a class="header-btn1" href="index12.html" target="_blank"> Multi Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                  <div class="space16"></div>
-                                  <a class="header-btn1" href="single-index12.html" target="_blank"> One Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                               </div>
-                               <div class="homemenu-content">
-                                <a href="index12.html">Consulting Agency</a>
-                               </div>
-                            </div>
-                            <div class="space20"></div>
-                          </div>
-
-                          <div class="images">
-                            <div class="homemenu-thumb">
-                              <div class="img1">
-                              <img src="assets/img/all-images/demo-img13.png" alt="" class="commingsoon">
-                              </div>
-                              <div class="text">
-                                <h2>NEW</h2>
-                              </div>
-                              <div class="homemenu-btn">
-                                <a class="header-btn1" href="index13.html" target="_blank">Multi Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                <div class="space16"></div>
-                                <a class="header-btn1" href="single-index13.html" target="_blank"> One Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                             </div>
-                             <div class="homemenu-content">
-                              <a href="index13.html">Advertising Agency</a>
-                             </div>
-                            </div>
-                            <div class="space20"></div>
-                          </div>
-
-                          <div class="images">
-                            <div class="homemenu-thumb">
-                              <div class="img1">
-                              <img src="assets/img/all-images/demo-img14.png" alt="">
-                              </div>
-                              <div class="text">
-                                <h2>NEW</h2>
-                              </div>
-                               <div class="homemenu-btn">
-                                  <a class="header-btn1" href="index14.html" target="_blank">Multi Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                  <div class="space16"></div>
-                                  <a class="header-btn1" href="single-index14.html" target="_blank"> One Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                               </div>
-                               <div class="homemenu-content">
-                                <a href="index14.html">IT Solution Agency</a>
-                               </div>
-                            </div>
-                            <div class="space20"></div>
-                          </div>
-
-                          <div class="images">
-                            <div class="homemenu-thumb" style="margin: 0;">
-                              <div class="img1">
-                              <img src="assets/img/all-images/demo-img15.png" alt="">
-                              </div>
-                              <div class="text">
-                                <h2>NEW</h2>
-                              </div>
-                               <div class="homemenu-btn">
-                                  <a class="header-btn1" href="index15.html" target="_blank">Multi Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                  <div class="space16"></div>
-                                  <a class="header-btn1" href="single-index15.html" target="_blank"> One Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                               </div>
-                               <div class="homemenu-content">
-                                <a href="index15.html">Startup Agency</a>
-                               </div>
-                            </div>
-                            <div class="space20"></div>
-                          </div>
-                        </div>
-
-                        <div class="all-images-menu">
-                          <div class="images">
-                            <div class="homemenu-thumb">
-                              <div class="img1">
-                              <img src="assets/img/all-images/demo-img5.png" alt="">
-                              </div>
-                          
-                               <div class="homemenu-btn">
-                                  <a class="header-btn1" href="index6.html" target="_blank">Multi Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                  <div class="space16"></div>
-                                  <a class="header-btn1" href="single-index6.html" target="_blank">One Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                               </div>
-                               <div class="homemenu-content">
-                                <a href="index6.html">SEO & Digital Marketing 06</a>
-                               </div>
-                            </div>
-                          </div>
-
-                          <div class="images">
-                            <div class="homemenu-thumb">
-                              <div class="img1">
-                              <img src="assets/img/all-images/demo-img6.png" alt="">
-                              </div>
-                               <div class="homemenu-btn">
-                                  <a class="header-btn1" href="index7.html" target="_blank"> Multi Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                  <div class="space16"></div>
-                                  <a class="header-btn1" href="single-index7.html" target="_blank"> One Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                               </div>
-                               <div class="homemenu-content">
-                                <a href="index7.html">SEO & Digital Marketing 07</a>
-                               </div>
-                            </div>
-                          </div>
-
-                          <div class="images">
-                            <div class="homemenu-thumb">
-                              <div class="img1">
-                              <img src="assets/img/all-images/demo-img7.png" alt="" class="commingsoon">
-                              </div>
-                              <div class="homemenu-btn">
-                                <a class="header-btn1" href="index8.html" target="_blank">Multi Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                <div class="space16"></div>
-                                <a class="header-btn1" href="single-index8.html" target="_blank"> One Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                             </div>
-                             <div class="homemenu-content">
-                              <a href="index8.html">SEO & Digital Marketing 08</a>
-                             </div>
-                            </div>
-                          </div>
-
-                          <div class="images">
-                            <div class="homemenu-thumb">
-                              <div class="img1">
-                              <img src="assets/img/all-images/demo-img8.png" alt="">
-                              </div>
-                               <div class="homemenu-btn">
-                                  <a class="header-btn1" href="index9.html" target="_blank">Multi Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                  <div class="space16"></div>
-                                  <a class="header-btn1" href="single-index9.html" target="_blank"> One Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                               </div>
-                               <div class="homemenu-content">
-                                <a href="index9.html">SEO & Digital Marketing 09</a>
-                               </div>
-                            </div>
-                          </div>
-
-                          <div class="images">
-                            <div class="homemenu-thumb" style="margin: 0;">
-                              <div class="img1">
-                              <img src="assets/img/all-images/demo-img9.png" alt="">
-                              </div>
-                              <div class="text">
-                                <h2>HOT</h2>
-                              </div>
-                               <div class="homemenu-btn">
-                                  <a class="header-btn1" href="index10.html" target="_blank">Multi Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                  <div class="space16"></div>
-                                  <a class="header-btn1" href="single-index10.html" target="_blank"> One Page <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                               </div>
-                               <div class="homemenu-content">
-                                <a href="index10.html">SEO & Digital Marketing 10</a>
-                               </div>
-                            </div>
-                          </div>
-                        </div>
-                        
-                        <div class="all-images-menu">
-                          <div class="images">
-                            <div class="space20"></div>
-                            <div class="homemenu-thumb">
-                              <div class="img1 comming-soon">
-                              <img src="assets/img/all-images/demo-img17.png" alt="">
-                              </div>
-                               <div class="homemenu-content">
-                                <a href="index6.html">Creative Agency</a>
-                               </div>
-                            </div>
-                          </div>
-
-                          <div class="images">
-                            <div class="space20"></div>
-                            <div class="homemenu-thumb">
-                              <div class="img1 comming-soon">
-                              <img src="assets/img/all-images/demo-img16.png" alt="">
-                              </div>
-                               <div class="homemenu-content">
-                                <a href="index7.html">Digital Marketing Agency</a>
-                               </div>
-                            </div>
-                          </div>
-
-                          <div class="images">
-                            <div class="space20"></div>
-                            <div class="homemenu-thumb">
-                              <div class="img1 comming-soon">
-                              <img src="assets/img/all-images/demo-img18.png" alt="" class="commingsoon">
-                              </div>
-                             <div class="homemenu-content">
-                              <a href="index8.html">Digital Marketer Agency</a>
-                             </div>
-                            </div>
-                          </div>
-
-                          <div class="images">
-                            <div class="space20"></div>
-                            <div class="homemenu-thumb">
-                              <div class="img1 comming-soon">
-                              <img src="assets/img/all-images/demo-img19.png" alt="">
-                              </div>
-
-                               <div class="homemenu-content">
-                                <a href="index9.html">Corporate Agency</a>
-                               </div>
-                            </div>
-                          </div>
-
-                          <div class="images">
-                            <div class="space20"></div>
-                            <div class="homemenu-thumb" style="margin: 0;">
-                              <div class="img1 comming-soon">
-                              <img src="assets/img/all-images/demo-img20.png" alt="">
-                              </div>
-                               <div class="homemenu-content">
-                                <a href="index10.html">Coming Soon</a>
-                               </div>
-                            </div>
-                          </div>
-                        </div>
-                       </div>
-                    </div>
-                 </div> -->
-                                    </li>
-                                    <li><a href="about.html">About Us</a></li>
-
-                                    <li><a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
-                                        <ul class="dropdown-padding">
-
-                                            <li><a href="service1.html">Our Services</a></li>
-                                            <!-- <li><a href="service1.html">Our Services</a></li> -->
-                                            <li><a href="service2.html">Web Design & Developement</a></li>
-                                            <li><a href="service10.html">Blockchain development</a></li>
-                                            <li class="dropdown">
-                                                <a href="#">Digital Marketing <i class="fa-solid fa-angle-right"></i></a>
-                                                <ul class="sub-dropdown">
-                                                    <li><a href="service5.html">Social Media Marketing</a></li>
-                                                    <li><a href="service6.html">Graphic Designing</a></li>
-                                                    <li><a href="service7.html">Search Engine Optimization</a></li>
-                                                    <!-- <li><a href="service3.html">Pay-Per-Click Advertising</a></li> -->
-                                                    <li><a href="service4.html">Email Marketing</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="plans.html">Our Plans</a></li>
-                                    <li><a href="blog.html">Blogs <i ></i></a>
-                                        <!-- <ul class="dropdown-padding">
-                  <li><a href="blog.html">Blog One</a></li>
-                  <li><a href="blog-left.html">Blog Left</a></li>
-                  <li><a href="blog-right.html">Blog Right</a></li>
-                  <li><a href="blog-single.html">Blog Single</a></li>
-                </ul> -->
-                                    </li>
-                                    <!-- <li><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
-                  <ul class="dropdown-padding">
-                    <li><a href="case.html">Case Study</a></li>
-                    <li><a href="case-single.html">Case Study Single</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                    <li><a href="pricing.html">Pricing Plan</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="404.html">404</a></li>
-                  </ul>
-                </li> -->
-                                    <li><a href="#">Portfolio</a></li>
-                                    <!-- <li><a href="contact.html">Contact Us</a></li> -->
-                                </ul>
-                            </div>
-                            <div class="btn-area">
-                                <!-- <div class="search-icon header__search header-search-btn">
-                <a href="#"><img src="assets/img/icons/search-icons1.svg" alt=""></a>
-              </div> -->
-                                <a href="contact.html" class="header-btn1">Contact Us <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                            </div>
-
-                            <div class="header-search-form-wrapper">
-                                <div class="tx-search-close tx-close"><i class="fa-solid fa-xmark"></i></div>
-                                <div class="header-search-container">
-                                    <form role="search" class="search-form">
-                                        <input type="search" class="search-field" placeholder="Search …" value="" name="s">
-                                        <button type="submit" class="search-submit"><img src="assets/img/icons/search-icons1.svg" alt=""></button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="body-overlay"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
     <!--=====HEADER END =======-->
 
     <!--===== MOBILE HEADER STARTS =======-->
-    <div class="mobile-header mobile-haeder1 d-block d-lg-none">
-        <div class="container-fluid">
-            <div class="col-12">
-                <div class="mobile-header-elements">
-                    <div class="mobile-logo">
-                        <a href="index.html"><img src="assets/img/logo/logo1.png" alt=""></a>
-                    </div>
-                    <div class="mobile-nav-icon dots-menu">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="mobile-sidebar mobile-sidebar1">
-        <div class="logosicon-area">
-            <div class="logos">
-                <img src="assets/img/logo/logo1.png" alt="">
-            </div>
-            <div class="menu-close">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-        </div>
-        <div class="mobile-nav mobile-nav1">
-            <ul class="mobile-nav-list nav-list1">
-                <li><a href="index.html">Home </a>
-                    <!-- <ul class="sub-menu">
-          <li>
-            <a href="#">Multiple Page</a>
-            <ul class="sub-menu">
-              <li><a href="index.html">Home One</a></li>
-              <li><a href="index2.html">Home Two</a></li>
-              <li><a href="index3.html">Home Three</a></li>
-              <li><a href="index4.html">Home Four</a></li>
-              <li><a href="index5.html">Home Five</a></li>
-              <li><a href="index6.html">Home Six</a></li>
-              <li><a href="index7.html">Home Seven</a></li>
-              <li><a href="index8.html">Home Eight</a></li>
-              <li><a href="index9.html">Home Nine</a></li>
-              <li><a href="index10.html">Home Ten</a></li>
-              <li><a href="index11.html">Home Eleven</a></li>
-              <li><a href="index12.html">Home Twelve</a></li>
-              <li><a href="index13.html">Home Thirteen</a></li>
-              <li><a href="index14.html">Home Fouteen</a></li>
-              <li><a href="index15.html">Home Fifteen</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Landing Page</a>
-            <ul class="sub-menu">
-              <li><a href="single-index1.html" target="_blank">Home One</a></li>
-              <li><a href="single-index2.html" target="_blank">Home Two</a></li>
-              <li><a href="single-index3.html" target="_blank">Home Three</a></li>
-              <li><a href="single-index4.html" target="_blank">Home Four</a></li>
-              <li><a href="single-index5.html" target="_blank">Home Five</a></li>
-              <li><a href="single-index6.html" target="_blank">Home Six</a></li>
-              <li><a href="single-index7.html" target="_blank">Home Seven</a></li>
-              <li><a href="single-index8.html" target="_blank">Home Eight</a></li>
-              <li><a href="single-index9.html" target="_blank">Home Nine</a></li>
-              <li><a href="single-index10.html" target="_blank">Home Ten</a></li>
-              <li><a href="single-index11.html" target="_blank">Home Eleven</a></li>
-              <li><a href="single-index12.html" target="_blank">Home Twelve</a></li>
-              <li><a href="single-index13.html" target="_blank">Home Thirteen</a></li>
-              <li><a href="single-index14.html" target="_blank">Home Fouteen</a></li>
-              <li><a href="single-index15.html" target="_blank">Home Fifteen</a></li>
-            </ul>
-          </li>
-        </ul> -->
-                </li>
-                <li><a href="about.html">About Us</a></li>
-
-                <li><a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
-                    <ul class="dropdown-padding">
-                        <li><a href="service1.html">Our Services</a></li>
-                        <li><a href="service2.html">Web Design & Developement</a></li>
-                        <li><a href="service10.html">Blockchain development</a></li>
-                        <li class="dropdown">
-                            <a href="#">Digital Marketing <i class="fa-solid fa-angle-right"></i></a>
-                            <ul class="sub-dropdown">
-                                <li><a href="service5.html">Social Media Marketing</a></li>
-                                <li><a href="service6.html">Graphic Designing</a></li>
-                                <li><a href="service7.html">Search Engine Optimization</a></li>
-                                <!-- <li><a href="service3.html">Pay-Per-Click Advertising</a></li> -->
-                                <li><a href="service4.html">Email Marketing</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="plans.html">Our Plans</a></li>
-                <li><a href="blog.html">Blogs</a>
-                    <!-- <ul class="sub-menu">
-          <li><a href="blog.html">Blog One</a></li>
-          <li><a href="blog-left.html">Blog Left</a></li>
-          <li><a href="blog-right.html">Blog Right</a></li>
-          <li><a href="blog-single.html">Blog Single</a></li>
-        </ul> -->
-                </li>
-                <!-- <li><a href="#">Pages</a>
-        <ul class="sub-menu">
-          <li><a href="case.html">Case Study One</a></li>
-          <li><a href="case-single.html">Case Study Single</a></li>
-          <li><a href="team.html">Our Team</a></li>
-          <li><a href="pricing.html">Pricing Plan</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="404.html">404</a></li>
-        </ul>
-      </li> -->
-                <li><a href="#">Portfolio</a></li>
-                <!-- <li><a href="contact.html">Contact Us</a></li> -->
-            </ul>
-
-            <div class="allmobilesection">
-                <a href="contact.html" class="header-btn1">Get Started <span><i class="fa-solid fa-arrow-right"></i></span></a>
-
-                <!-- Meta Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '540973268995603');
-    fbq('track', 'PageView');
+    <div id="mobile-header"></div>
+    <script>
+        fetch("mobileheader.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("mobile-header").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading the mobile header:", error));
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=540973268995603&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-                <div class="single-footer">
-                    <h3>Contact Info</h3>
-                    <div class="footer1-contact-info">
-                        <div class="contact-info-single">
-                            <div class="contact-info-icon">
-                                <i class="fa-solid fa-phone-volume"></i>
-                            </div>
-                            <div class="contact-info-text">
-                                <a href="tel:+91 9156764099">+91 9156764099</a>
-                            </div>
-                        </div>
 
-                        <div class="contact-info-single">
-                            <div class="contact-info-icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div class="contact-info-text">
-                                <a href="mailto:info@tecmetaverse.com">info@tecmetaverse.com</a>
-                            </div>
-                        </div>
-
-                        <div class="single-footer">
-                            <h3>Our Location</h3>
-
-                            <div class="contact-info-single">
-                                <div class="contact-info-icon">
-                                </div>
-                                <div class="contact-info-text">
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/TecMetaverse/@18.5642566,73.7711113,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bfffda1390d5:0xe9942f5eb5f7a78d!8m2!3d18.5642566!4d73.7711113!16s%2Fg%2F11w48jlpr2?entry=ttu&g_ep=EgoyMDI1MDEwNi4xIKXMDSoASAFQAw%3D%3D" target="_blank"
-                                            style="color: black">
-                                            <img src="assets/img/icons/location.svg" alt="" width="16" height="16">
-                                            <span>
-                        506, PYRAMID AXIS,<br class="d-lg-block d-none">
-                        BANER ROAD, <br class="d-lg-block d-none">
-                        Behind Croma Showroom , Veerbhadra Nagar, <br class="d-lg-block d-none">
-                        Baner, Pune - 411045.
-                      </span>
-                                        </a>
-                                    </li>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="single-footer">
-                            <h3>Social Links</h3>
-
-                            <div class="social-links-mobile-menu">
-                                <ul>
-                                    <li><a href="https://www.facebook.com/profile.php?id=61570535064265" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="https://www.instagram.com/tecmetaverse_25/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/company/tecmetaverse-official/posts/?feedView=all" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@TECMETAVERSE" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--===== MOBILE HEADER STARTS =======-->
+    <!--===== MOBILE HEADER ENDS =======-->
 
     <!--===== HERO AREA STARTS =======-->
     <div class="about-header-area" style="background-image: url(assets/img/bg/inner-header.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        <img src="assets/img/elements/elements1.png" alt="" class="elements1 aniamtion-key-1">
-        <img src="assets/img/elements/star2.png" alt="" class="star2 keyframe5">
+        <img src="assets/img/elements/elements1.png"  loading="lazy" alt="" class="elements1 aniamtion-key-1">
+        <img src="assets/img/elements/star2.png"  loading="lazy" alt="" class="star2 keyframe5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 m-auto">
@@ -711,34 +118,27 @@
             <div class="row align-items-center">
                 <div class="col-lg-4">
                     <div class="about-images">
-                        <figure class="image-anime">
-                            <img src="assets/img/all-images/about-img002.png" alt="">
+                        <figure class="image-anime" style="padding-bottom: 50px;">
+                            <img src="assets/img/all-images/digital3.jpg" style="border-radius: 200px;height:500px"  loading="lazy" alt="">
                         </figure>
-                        <img src="assets/img/elements/star1.png" alt="" class="star1 keyframe5">
+                        <img src="assets/img/elements/star1.png"  loading="lazy" alt="" class="star1 keyframe5">
                     </div>
                 </div>
                 <div class="col-lg-5">
                     <div class="about-content-area heading2">
-                        <!-- <div class="arrow-circle">
-          <a href="about.html">
-            <img src="assets/img/elements/elements4.png" alt="" class="elements4 keyframe5">
-            <img src="assets/img/icons/arrow.svg" alt="" class="arrow">
-          </a>
-          </div> -->
+
                         <h2>Your Partner in Web, Blockchain & Digital Innovation</h2>
                         <p>At TecMetaverse, we combine cutting-edge technology with strategic innovation to deliver top-tier solutions. As a leading Web Development, Blockchain Development, and Digital Marketing company, we specialize in building secure,
                             scalable applications, decentralized solutions, and powerful digital strategies. Whether you're looking for custom websites, blockchain-powered platforms, or high-impact marketing campaigns, we help you achieve visibility,
                             engagement, and long-term success in the digital era.</p>
-                        <!-- <div class="btn-area">
-            <a href="about.html" class="header-btn1">Learn More<span><i class="fa-solid fa-arrow-right"></i></span></a>
-          </div> -->
+
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="about-auhtor-images">
-                        <img src="assets/img/elements/elements5.png" alt="" class="elements5 keyframe5">
+                        <img src="assets/img/elements/elements5.png"  loading="lazy" alt="" class="elements5 keyframe5">
                         <figure class="image-anime">
-                            <img src="assets/img/all-images/about-img2.png" alt="">
+                            <img src="assets/img/all-images/about-img2.png"  loading="lazy" alt="">
                         </figure>
                     </div>
                 </div>
@@ -747,61 +147,7 @@
     </div>
     <!--===== ABOUT AREA ENDS =======-->
     <div class="space60"></div>
-    <!--===== TESTIMONIAL AREA STARTS =======-->
-    <!-- <div class="slider-section-area sp5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-2">
-                    <div class="sldier-head">
-                        <p>Trusted by <br class="d-lg-block d-none"> Top Companies</p>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="slider-images-area owl-carousel">
-                        <div class="img1">
-                            <img src="assets/img/elements/brand-img1.png" alt="">
-                        </div>
-                        <div class="img1">
-                            <img src="assets/img/elements/brand-img2.png" alt="">
-                        </div>
-                        <div class="img1">
-                            <img src="assets/img/elements/brand-img3.png" alt="">
-                        </div>
-                        <div class="img1">
-                            <img src="assets/img/elements/brand-img4.png" alt="">
-                        </div>
-                        <div class="img1">
-                            <img src="assets/img/elements/brand-img5.png" alt="">
-                        </div>
-                        <div class="img1">
-                            <img src="assets/img/elements/brand-img6.png" alt="">
-                        </div>
-                        <div class="img1">
-                            <img src="assets/img/elements/brand-img7.png" alt="">
-                        </div>
-                        <div class="img1">
-                            <img src="assets/img/elements/brand-img8.png" alt="">
-                        </div>
-                        <div class="img1">
-                            <img src="assets/img/elements/brand-img9.png" alt="">
-                        </div>
-                        <div class="img1">
-                            <img src="assets/img/elements/brand-img10.png" alt="">
-                        </div>
-                        <div class="img1">
-                            <img src="assets/img/elements/brand-img11.png" alt="">
-                        </div>
-                        <div class="img1">
-                            <img src="assets/img/elements/brand-img12.png" alt="">
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div> -->
-    <!--===== TESTIMONIAL AREA ENDS =======-->
 
     <!--===== WORK AREA STARTS =======-->
     <div class="works-inner-section-area sp1">
@@ -815,7 +161,7 @@
                         <div class="space32"></div>
                         <div class="works-content-box">
                             <div class="icons">
-                                <img src="assets/img/icons/works-icons7.svg" alt="">
+                                <img src="assets/img/icons/works-icons7.svg"  loading="lazy" alt="">
                             </div>
                             <div class="content">
                                 <a href="case.html">Expertise Across Industries</a>
@@ -826,7 +172,7 @@
                         <div class="space20"></div>
                         <div class="works-content-box">
                             <div class="icons">
-                                <img src="assets/img/icons/works-icons8.svg" alt="">
+                                <img src="assets/img/icons/works-icons8.svg"  loading="lazy" alt="">
                             </div>
                             <div class="content">
                                 <a href="case-single.html">Custom-Built & Future-Ready Solutions</a>
@@ -836,7 +182,7 @@
                         <div class="space20"></div>
                         <div class="works-content-box">
                             <div class="icons">
-                                <img src="assets/img/icons/sound-icons1.svg" alt="">
+                                <img src="assets/img/icons/sound-icons1.svg"  loading="lazy" alt="">
                             </div>
                             <div class="content">
                                 <a href="case-single.html">On-Time Delivery & Quality Assurance</a>
@@ -846,7 +192,7 @@
                         <div class="space20"></div>
                         <div class="works-content-box">
                             <div class="icons">
-                                <img src="assets/img/icons/works-icons9.svg" alt="">
+                                <img src="assets/img/icons/works-icons9.svg"  loading="lazy" alt="">
                             </div>
                             <div class="content">
                                 <a href="case-single.html">Dedicated Support & Results-Driven</a>
@@ -857,7 +203,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="about-all-images-area">
-                        <img src="assets/img/elements/elements14.png" alt="" class="elements12 keyframe5">
+                        <img src="assets/img/elements/elements14.png"  loading="lazy" alt="" class="elements12 keyframe5">
                         <!-- <img src="assets/img/elements/elements15.png" alt="" class="elements13 keyframe5"> -->
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
@@ -866,15 +212,15 @@
                                     <!-- <img src="assets/img/all-images/about-img6.png" alt=""> -->
                                 </div>
                             </div>
-                            <div class="col-lg-7 col-md-7">
+                            <div class="col-lg-12 col-md-7">
                                 <div class="img2 image-anime">
-                                    <img src="assets/img/all-images/about-img001.png" alt="" style="width: 600px;content: auto;">
+                                    <img src="assets/img/all-images/about-img001.png"  loading="lazy" alt="" style="width: 600px;content: auto;">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div>
-                       
+
 
 
                     </div>
@@ -885,69 +231,45 @@
     <!--===== WORK AREA ENDS =======-->
 
     <!--===== SERVICE AREA STARTS =======-->
-    <div class="service2-section-area sp1 bg2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 m-auto">
-                    <div class="service2-header heading2 text-center">
-                        <img src="assets/img/elements/star7.png" alt="" class="star2 keyframe5">
-                        <img src="assets/img/elements/star7.png" alt="" class="star3 keyframe5">
-                        <h5>Our Value</h5>
-                        <h2>Tailored Solutions, Proven Results, <br class="d-md-block d-none"> And Exceptional Service</h2>
-                        <p>We pride ourselves on delivering a value proposition that goes beyond expectations. Our <br class="d-md-block d-none"> approach is centered on understanding your business inside</p>
+    <div style="background: linear-gradient(145deg, #f8f9fa, #ffffff); padding: 80px 0; width: 100%; box-sizing: border-box; perspective: 1000px;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <!-- Top Section with Image and Mission/Vision -->
+            <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-bottom: 40px;">
+                <!-- Left Column - Image -->
+                <div style="flex: 1 1 400px; height: 600px;">
+                    <div style="height: 100%; transform-style: preserve-3d; transform: translateZ(20px); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateZ(30px) rotateX(2deg)'" onmouseout="this.style.transform='translateZ(20px)'">
+                        <img src="assets/img/all-images/service-img1.png" alt="Service Image" style="width: 100%; height: 100%; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); object-fit: cover;">
+                    </div>
+                </div>
+    
+                <!-- Right Column - Mission and Vision -->
+                <div style="flex: 1 1 400px; display: flex; flex-direction: column; gap: 20px; height: 600px;">
+                    <!-- Mission Box -->
+                    <div style="flex: 1; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transform-style: preserve-3d; transform: translateZ(10px); transition: all 0.3s ease; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateZ(20px) rotateX(2deg)'" onmouseout="this.style.transform='translateZ(10px)'">
+                        <h5 style="color: #4a90e2; margin: 0 0 15px 0; font-size: 18px; font-weight: 600; transform: translateZ(20px);">Our Mission</h5>
+                        <a href="service1.html" style="color: #333; text-decoration: none; font-size: 20px; font-weight: bold; display: block; margin-bottom: 15px; transform: translateZ(15px);">At TecMetaverse, we do more than build solutions</a>
+                        <p style="color: #666; margin: 0; line-height: 1.6; transform: translateZ(10px); flex-grow: 1;">Our mission is to empower businesses with cutting-edge technology and strategies, helping you achieve success and seize new opportunities.</p>
+                    </div>
+    
+                    <!-- Vision Box -->
+                    <div style="flex: 1; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transform-style: preserve-3d; transform: translateZ(10px); transition: all 0.3s ease; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateZ(20px) rotateX(2deg)'" onmouseout="this.style.transform='translateZ(10px)'">
+                        <h5 style="color: #4a90e2; margin: 0 0 15px 0; font-size: 18px; font-weight: 600; transform: translateZ(20px);">Our Vision</h5>
+                        <a href="service1.html" style="color: #333; text-decoration: none; font-size: 20px; font-weight: bold; display: block; margin-bottom: 15px; transform: translateZ(15px);">We aspire to create a world where every business owner feels empowered</a>
+                        <p style="color: #666; margin: 0; line-height: 1.6; transform: translateZ(10px); flex-grow: 1;">By staying true to our vision and values, we are committed to driving positive change and shaping a brighter future for businesses and communities.</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="images-content-area">
-                        <div class="img1">
-                            <img src="assets/img/all-images/service-img1.png" alt="">
-                        </div>
-                        <div class="content-area">
-                            <h5 style="color: black;">Our Value</h5>
-                            <a href="service1.html" class="text" style="color: black;">Explore Our Unique Value Proposition & How We Drive Business Growth</a>
-                            <p>we're committed to delivering exceptional value to our clients. We understand that every business is unique, personalized approach to every project we undertake.</p>
-                            <div class="btn-area">
-                                <a href="service1.html" class="header-btn1">Learn More <span><i class="fa-solid fa-arrow-right"></i></span>
-              </a>
-                            </div>
-                        </div>
-                        <div class="arrow-area">
-                            <a href="service1.html"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="service-all-boxes">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-6">
-                                <div class="service2-auhtor-boxarea">
-                                    <div class="arrow">
-                                        <a href="service1.html"><i class="fa-solid fa-arrow-right"></i></a>
-                                    </div>
-                                    <div class="content-area">
-                                        <h5>Our Mission</h5>
-                                        <a href="service1.html">At TecMetaverse, we do more than build solutions—we partner with you in web development, blockchain innovation, and digital growth.</a>
-                                        <p> Our mission is to empower businesses with cutting-edge technology and strategies, helping you achieve success and seize new opportunities.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 col-md-6">
-                                <div class="service2-auhtor2-boxarea">
-                                    <div class="arrow">
-                                        <a href="service1.html"><i class="fa-solid fa-arrow-right"></i></a>
-                                    </div>
-                                    <div class="content-area">
-                                        <h5>Our Vision</h5>
-                                        <a href="service1.html">We aspire to create a world where every business owner feels empowered</a>
-                                        <p>By staying true to our vision and values, we are committed to driving positive change and shaping a brighter future for businesses and communities.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    
+            <!-- Bottom Section - Our Value -->
+            <div style="margin-top: 60px; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); transform-style: preserve-3d; transform: translateZ(10px); transition: all 0.3s ease;" onmouseover="this.style.transform='translateZ(20px) rotateX(1deg)'" onmouseout="this.style.transform='translateZ(10px)'">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h5 style="color: #4a90e2; margin: 0 0 15px 0; font-size: 18px; font-weight: 600; transform: translateZ(20px);">Our Value</h5>
+                    <h2 style="font-size: 32px; color: #333; margin: 0 0 20px 0; line-height: 1.4; transform: translateZ(15px);">Tailored Solutions, Proven Results, <br>And Exceptional Service</h2>
+                    <p style="color: #666; font-size: 16px; line-height: 1.6; margin: 0 0 25px 0; transform: translateZ(10px);">We pride ourselves on delivering a value proposition that goes beyond expectations. Our approach is centered on understanding your business inside and out.</p>
+                    <a href="service1.html" style="display: inline-flex; align-items: center; background: linear-gradient(145deg, #4a90e2, #357abd); color: white; padding: 15px 30px; text-decoration: none; border-radius: 10px; font-weight: 500; transform: translateZ(25px); transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(74,144,226,0.3);" onmouseover="this.style.transform='translateZ(30px)'" onmouseout="this.style.transform='translateZ(25px)'">
+                        Learn More 
+                        <span style="margin-left: 10px;">→</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -960,8 +282,8 @@
             <div class="row">
                 <div class="col-lg-8 m-auto">
                     <div class="history-header-area text-center heading2">
-                        <img src="assets/img/elements/star7.png" alt="" class="star2 keyframe5">
-                        <img src="assets/img/elements/star7.png" alt="" class="star3 keyframe5">
+                        <img src="assets/img/elements/star7.png"  loading="lazy" alt="" class="star2 keyframe5">
+                        <img src="assets/img/elements/star7.png" loading="lazy"  alt="" class="star3 keyframe5">
                         <h5>Our History</h5>
                         <h2>Our Journey: Charting the <br class="d-lg-block d-none"> Evolution of TecMetaverse</h2>
                     </div>
@@ -970,18 +292,18 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-all-images-area">
-                        <img src="assets/img/elements/elements14.png" alt="" class="elements12 keyframe5">
-                        <img src="assets/img/elements/elements15.png" alt="" class="elements13 keyframe5">
+                        <img src="assets/img/elements/elements14.png"  loading="lazy" alt="" class="elements12 keyframe5">
+                        <img src="assets/img/elements/elements15.png"  loading="lazy" alt="" class="elements13 keyframe5">
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="img1 image-anime">
                                     <div class="space100"></div>
-                                    <img src="assets/img/all-images/history-img1.png" alt="">
+                                    <img src="assets/img/all-images/history-img1.png"  loading="lazy" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="img2 image-anime">
-                                    <img src="assets/img/all-images/history-img2.png" alt="">
+                                    <img src="assets/img/all-images/history-img2.png"  loading="lazy" alt="">
                                 </div>
                             </div>
                         </div>
@@ -1054,80 +376,9 @@
         </div>
     </div>
     <!--===== HISTORY AREA ENDS =======-->
-
-    <!--===== SKILLS AREA STARTS =======-->
-    <!-- <div class="skills-section-area sp2">
-    <img src="assets/img/bg/cta-bg1.png" alt="" class="cta-bg1 aniamtion-key-2">
-    <img src="assets/img/bg/cta-bg2.png" alt="" class="cta-bg2 aniamtion-key-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 m-auto">
-                <div class="skills-header text-center heading2">
-                    <h5>Skills</h5>
-                    <h2>Our Skills</h2>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-10 m-auto">
-          <div class="circle-progress-area">
-            <div class="row">
-              <div class="col-lg-3 col-md-6">
-                <div class="progresbar">
-                  <div class="progressbar">
-                     <div class="circle" data-percent="82">
-                      <canvas></canvas>
-                         <div>82%</div>
-                    </div>
-                  </div>
-                  <p>S M M</p>
-                </div>
-              </div>
-  
-              <div class="col-lg-3 col-md-6">
-                <div class="progresbar">
-                  <div class="progressbar">
-                    <div class="circle two" data-percent="49">
-                      <canvas></canvas>
-                        <div>49%</div>
-                   </div>
-                 </div>
-                 <p>P P C</p>
-                </div>
-              </div>
-  
-              <div class="col-lg-3 col-md-6">
-                <div class="progresbar">
-                  <div class="progressbar">
-                    <div class="circle three" data-percent="99">
-                      <canvas></canvas>
-                       <div>99%</div>
-                    </div>
-                   </div>
-                   <p>SEO</p>
-                </div>
-              </div>
-  
-              <div class="col-lg-3 col-md-6">
-                <div class="progresbar">
-                  <div class="progressbar">
-                    <div class="circle four" data-percent="95">
-                      <canvas></canvas>
-                       <div>95%</div>
-                    </div>
-                   </div>
-                   <p>Digital Marketing</p>
-                </div>
-              </div>
-          </div>
-          </div>
-        </div>
-    </div>
-</div> -->
-    <!--===== SKILLS AREA ENDS =======-->
-
     <!--===== TEAM AREA STARTS =======-->
     <div class="team-inner-section-area sp2">
-        <!-- <div class="container">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-6 m-auto">
                     <div class="team2-header-area text-center heading2">
@@ -1140,9 +391,9 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-boxarea">
                         <div class="img1">
-                            <img src="assets/img/all-images/team-img1.png" alt="">
+                            <img src="assets/img/all-images/team-img1.png" loading="lazy"  alt="">
                         </div>
-                       
+
                         <div class="content">
                             <a>Mr. Rochak Sahu</a>
                             <p>Founder</p>
@@ -1154,12 +405,12 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-boxarea ">
                         <div class="img1">
-                            <img src="assets/img/all-images/team-002.jpg" alt=""style="height: 400px;width:auto;">
+                            <img src="assets/img/all-images/team-002.png"  loading="lazy" alt="" style="height: 400px;width:auto;">
 
                         </div>
-                       
+
                         <div class="content">
-                            <a>Anish Kadam</a>
+                            <a></a>
                             <p>CEO</p>
                         </div>
                     </div>
@@ -1169,9 +420,9 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-boxarea">
                         <div class="img1">
-                            <img src="assets/img/all-images/team-img4.png" alt=""style="height: 400px;">
+                            <img src="assets/img/all-images/team-img4.png"  loading="lazy" alt="" style="height: 400px;">
                         </div>
-                       
+
                         <div class="content">
                             <a>Soumyajit Routray</a>
                             <p>General manager</p>
@@ -1182,9 +433,9 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-boxarea m-0">
                         <div class="img1">
-                            <img src="assets/img/all-images/team-img3.png" alt=""style="height: 400px; width: auto;">
+                            <img src="assets/img/all-images/team-img3.png"  loading="lazy" alt="" style="height: 400px; width: auto;">
                         </div>
-                       
+
                         <div class="content">
                             <a>Tanya Agarwal</a>
                             <p>HR Manager</p>
@@ -1192,17 +443,17 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <div class="testimonial1-section-area sp6">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 m-auto">
                         <div class="testimonial-header heading2 text-center">
-                            <img src="assets/img/elements/star2.png" alt="" class="star2 keyframe5">
-                            <img src="assets/img/elements/star2.png" alt="" class="star3 keyframe5">
+                            <img src="assets/img/elements/star2.png"  loading="lazy" alt="" class="star2 keyframe5">
+                            <img src="assets/img/elements/star2.png"  loading="lazy" alt="" class="star3 keyframe5">
                             <h2 class="text-anime-style-3">Our Gallery</h2>
-                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -1210,10 +461,10 @@
                         <div class="testimonials-slider-area owl-carousel">
                             <div class="testimonial-boxarea" style="border: none;">
                                 <div class="row">
-                                   
+
                                     <div class="col-lg-12">
                                         <div class="images">
-                                            <img src="assets/img/all-images/gallery1.jpg" alt="">
+                                            <img src="assets/img/all-images/gallery1.jpg"  loading="lazy" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -1221,21 +472,10 @@
 
                             <div class="testimonial-boxarea" style="border: none;">
                                 <div class="row">
-                                   
-                                    <div class="col-lg-12">
-                                        <div class="images">
-                                            <img src="assets/img/all-images/gallery2.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="testimonial-boxarea" style="border: none;">
-                                <div class="row">
-                                    
                                     <div class="col-lg-12">
                                         <div class="images">
-                                            <img src="assets/img/all-images/gallery3.jpg" alt="">
+                                            <img src="assets/img/all-images/gallery2.jpg"  loading="lazy" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -1245,7 +485,47 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="images">
-                                            <img src="assets/img/all-images/gallery4.jpg" alt="">
+                                            <img src="assets/img/all-images/gallery7.jpg"  loading="lazy" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-boxarea" style="border: none;">
+                                <div class="row">
+
+                                    <div class="col-lg-12">
+                                        <div class="images">
+                                            <img src="assets/img/all-images/gallery3.jpg"  loading="lazy" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-boxarea" style="border: none;">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="images">
+                                            <img src="assets/img/all-images/gallery4.jpg"  loading="lazy" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-boxarea" style="border: none;">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="images">
+                                            <img src="assets/img/all-images/gallery6.jpg"  loading="lazy" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-boxarea" style="border: none;">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="images">
+                                            <img src="assets/img/all-images/gallery8.jpg"  loading="lazy" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -1264,8 +544,8 @@
 
     <!--===== CTA AREA STARTS =======-->
     <div class="cta-section-area">
-        <img src="assets/img/bg/cta-bg1.png" alt="" class="cta-bg1 aniamtion-key-2">
-        <img src="assets/img/bg/cta-bg2.png" alt="" class="cta-bg2 aniamtion-key-1">
+        <img src="assets/img/bg/cta-bg1.png"  loading="lazy" alt="" class="cta-bg1 aniamtion-key-2">
+        <img src="assets/img/bg/cta-bg2.png"  loading="lazy" alt="" class="cta-bg2 aniamtion-key-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 m-auto">
@@ -1284,112 +564,7 @@
 
     <!--===== FOOTER AREA STARTS =======-->
     <!-- Meta Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '540973268995603');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=540973268995603&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-    <div class="footer1-section-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-logo-area">
-                        <img src="assets/img/logo/logop1.png" alt="">
-                        <p>By optimizing content, leveraging relevant keywords, and adhering to best practices, businesses can secure prominent position (SEO)</p>
-                        <ul>
-                            <li>
-                                <a href="https://www.facebook.com/profile.php?id=61570535064265"><img src="assets/img/icons/facebook.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/tecmetaverse_25/"><img src="assets/img/icons/instagram.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company/tecmetaverse-official/posts/?feedView=all"><img src="assets/img/icons/linkedin.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/@TECMETAVERSE"><img src="assets/img/icons/youtube.svg" alt=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-6">
-                    <div class="footer-logo-area1">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="blog.html">Our Blog</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="service1.html">Services</a></li>
-                            <!-- <li><a href="case.html">Marketing</a></li> -->
-                            <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
-                            <li><a href="contact.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-logo-area2">
-                        <h3>Get in touch</h3>
-                        <ul>
-                            <li>
-                                <a href="mailto:info@tecmetaverse.com"><img src="assets/img/icons/email.svg" alt=""><span>info@tecmetaverse.com</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.google.com/maps/place/TecMetaverse/@18.5642566,73.7711113,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bfffda1390d5:0xe9942f5eb5f7a78d!8m2!3d18.5642566!4d73.7711113!16s%2Fg%2F11w48jlpr2?entry=ttu&g_ep=EgoyMDI1MDEwNi4xIKXMDSoASAFQAw%3D%3D" target="_blank"
-                                    style="color: black">
-                                    <img src="assets/img/icons/location.svg" alt="">
-                                    <span>
-                      506, PYRAMID AXIS,<br class="d-lg-block d-none">
-                      BANER ROAD, <br class="d-lg-block d-none">
-                      Behind Croma Showroom , Veerbhadra Nagar, <br class="d-lg-block d-none">
-                      Baner, Pune - 411045.
-                  </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tel:+91 9156764099"><img src="assets/img/icons/phone.svg" alt=""><span>+91 9156764099</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-logo-area3">
-                        <h3>Subscribe Our Newsletter</h3>
-                        <form action="#">
-                            <input type="text" placeholder="Enter Your email">
-                            <button class="header-btn1"> Subscribe <span><i class="fa-solid fa-arrow-right"></i></span></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="space80 d-lg-block d-none"></div>
-            <div class="space40 d-lg-none d-block"></div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="copyright-area">
-                        <div class="pera">
-                            <p>ⓒCopyright 2024 TecMetaverse . All rights reserved</p>
-                        </div>
-                        <ul>
-                            <!-- <li><a href="#">Terms & Conditions</a></li> -->
-                            <li><a href="Privacy_Policy.html" class="m-0"> Privacy Policy </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="footer-container"></div>
     <!--===== FOOTER AREA ENDS =======-->
 
     <!--===== JS SCRIPT LINK =======-->
@@ -1410,6 +585,8 @@
     <script src="assets/js/plugins/slick-slider.js"></script>
     <script src="assets/js/plugins/circle-progress.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+
 
 </body>
 
