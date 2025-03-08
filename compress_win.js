@@ -15,9 +15,9 @@ fs.mkdirSync(outputDir, { recursive: true });
 
 async function processFiles(src, dest) {
   const files = fs.readdirSync(src, { withFileTypes: true });
-
+  
   for (const file of files) {
-    const srcPath = path.join(src, file.name).replace(/\\/g, "/"); // Fix Windows path
+    const srcPath = path.join(src, file.name).replace(/\\/g, "/"); // Normalize Windows path
     const destPath = path.join(dest, file.name).replace(/\\/g, "/");
 
     console.log(`🔍 Processing: ${srcPath}`);
@@ -32,7 +32,6 @@ async function processFiles(src, dest) {
         const compiledCss = sass.renderSync({ file: srcPath }).css.toString();
         const minifiedCss = csso.minify(compiledCss).css;
         const cssDestPath = destPath.replace(".scss", ".css");
-
         await fs.promises.writeFile(cssDestPath, minifiedCss);
         console.log(`✅ SCSS Minified: ${srcPath} → ${cssDestPath}`);
       } catch (error) {
@@ -44,7 +43,6 @@ async function processFiles(src, dest) {
         console.log(`🎭 Minifying CSS: ${srcPath}`);
         const cssContent = await fs.promises.readFile(srcPath, "utf8");
         const minifiedCss = csso.minify(cssContent).css;
-
         await fs.promises.writeFile(destPath, minifiedCss);
         console.log(`✅ CSS Minified: ${srcPath} → ${destPath}`);
       } catch (error) {
@@ -55,6 +53,7 @@ async function processFiles(src, dest) {
       try {
         console.log(`🖼️ Compressing Image: ${srcPath}`);
 
+        // Compress the image using appropriate plugins for each format.
         await imagemin([srcPath], {
           destination: dest,
           plugins: [
@@ -63,10 +62,20 @@ async function processFiles(src, dest) {
             imageminSvgo({ plugins: [{ removeViewBox: false }] }),
           ],
         });
-
         console.log(`✅ Image Compressed: ${srcPath} → ${destPath}`);
+
+        // Convert JPEG/JPG/PNG to WebP (skip SVG conversion)
+        if (file.name.match(/\.(jpe?g|png)$/i)) {
+          const webpDestPath = destPath.replace(/\.(jpe?g|png)$/i, ".webp");
+          const { default: imageminWebp } = await import("imagemin-webp");
+          await imagemin([srcPath], {
+            destination: dest,
+            plugins: [imageminWebp({ quality: 75 })],
+          });
+          console.log(`✅ Converted to WebP: ${srcPath} → ${webpDestPath}`);
+        }
       } catch (error) {
-        console.error(`❌ Failed Image Compression: ${srcPath}`, error);
+        console.error(`❌ Failed Image Compression/Conversion: ${srcPath}`, error);
       }
     } 
     else {
@@ -80,7 +89,7 @@ async function processFiles(src, dest) {
   }
 }
 
-// Run script
+// Run the script
 processFiles(inputDir, outputDir)
-  .then(() => console.log("\n🎉 Compression & Copying Completed Successfully!"))
+  .then(() => console.log("\n🎉 Compression, Conversion & Copying Completed Successfully!"))
   .catch((error) => console.error("\n❌ An error occurred:", error));
